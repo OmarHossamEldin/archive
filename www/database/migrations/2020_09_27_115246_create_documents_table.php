@@ -15,6 +15,17 @@ class CreateDocumentsTable extends Migration
     {
         Schema::create('documents', function (Blueprint $table) {
             $table->id();
+            $table->string('serial');
+            $table->string('type');
+            $table->string('description')->nullable();
+            $table->dateTime('date');
+            $table->foreignId('organization_id')->constrained('organizations')->onDelete('restrict');
+            $table->foreignId('subject_id')->constrained('subjects')->onDelete('restrict');
+            $table->foreignId('suit_cases_id')->constrained('suit_cases')->onDelete('restrict');
+            $table->string('file_path');
+
+
+
             $table->timestamps();
         });
     }
