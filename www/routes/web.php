@@ -12,7 +12,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['prefix','/'],function(){
+    
+    //Authenticated
+    Route::group(['middleware'=>'auth'],function(){
+    
+    });
+    //UnAuthenticated
+    Route::group(['middleware'=>'guest'],function(){
 
-Route::get('/', function () {
-    return view('welcome');
+        Route::get('/','GateController@home')->name('login'); // HomePage => loginForm
+
+    });
+   
 });
+
