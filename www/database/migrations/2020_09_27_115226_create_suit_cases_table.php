@@ -15,6 +15,12 @@ class CreateSuitCasesTable extends Migration
     {
         Schema::create('suit_cases', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->dateTime('send_date');
+            $table->string('airline');
+            $table->float('weight');
+            $table->string('comment')->nullable();
+            $table->boolean('current_flag')->default(false);
             $table->timestamps();
         });
     }
