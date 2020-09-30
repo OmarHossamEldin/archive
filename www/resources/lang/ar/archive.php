@@ -18,5 +18,17 @@ return [
         'organization' => 'الجهات',
         'subject' => 'الموضوعات',
         'suitcase' => 'الحقائب'
+    ],
+    'document' => [
+        'button_title' => "إضافة مكاتبة",
+        'create' => [
+            'serial' => 'رقم المسلسل',
+            'type' => 'النوع',
+            'description' => 'التوصيف',
+            'date' => 'التاريخ',
+            'organization' => 'الجهة'
+
+
+        ]
     ]
 ];

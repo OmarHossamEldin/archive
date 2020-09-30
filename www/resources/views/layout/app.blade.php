@@ -8,12 +8,21 @@
         <meta http-equiv='X-UA-Compatible' content='ie=edge'>
         <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{asset('css/fontawesome-all.min.css')}}">
-        <link rel="stylesheet" href="{{asset('css/gymstyle.css')}}">
+        <link rel="stylesheet" href="{{asset('css/daterangepicker.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/select2.min.css')}}">
+        @yield('css')
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
     </head>
     <body dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
     <div class="col-12 header">
     <div class="row">
-            <div class='col-2'></div> 
+            <div class='col-1'>
+            <select class='form-control locale-changer'>
+                <option val='en'>English</option>  
+                <option val='ar'>العربية</option> 
+            </select>
+            </div> 
+            <div class='col-1'></div>
             <div class='col-8'>
             <h3 class='brand'><a href="/">@lang('archive.app.name')</a></h3>
             </div>
@@ -22,10 +31,10 @@
     </div>
     <!-- sidebar -->
     <div class='sidebar' lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
-        <a class='active' href="#">@lang('archive.sidebar.document')</a>
-        <a href="#">@lang('archive.sidebar.organization')</a>
-        <a href="#">@lang('archive.sidebar.subject')</a>
-        <a href="#">@lang('archive.sidebar.suitcase')</a>
+        <a  class='' href="#">@lang('archive.sidebar.document')</a>
+        <a class='' href="" >@lang('archive.sidebar.organization')</a>
+        <a class='' href="#">@lang('archive.sidebar.subject')</a>
+        <a class='' href="#">@lang('archive.sidebar.suitcase')</a>
     </div>
     <!-- sidebar -->
     <div class="row-header">
@@ -33,7 +42,7 @@
             @include('inc.message')
         </div>
     </div>
-    <div class="container">
+    <div class="container" style="margin-top: 15px;">
         @yield('content')
     </div>
     <div class="col-12 footer">
@@ -47,6 +56,17 @@
         </div>
     </div>
     <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{asset('js/moment.min.js')}}"></script>
+    <script src="{{asset('js/jquery.daterangepicker.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/select2.min.js')}}"></script>
+    <script src="{{asset('js/globalebackend.js')}}"></script>
+    <!-- <script>
+        $('.locale-changer').change(function(){
+            {{ str_replace('_', '-', app()->getLocale()) == "en" ? app()->setLocale('en') : app()->setLocale('en') }}
+            location.reload()
+        })
+    </script> -->
+    @yield('js')
     </body>
 </html>

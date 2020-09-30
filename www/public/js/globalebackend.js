@@ -10,22 +10,20 @@ $(document).ready(function(){
 	//start turn off auto complet for all app
 	$("input").attr('autocomplete', 'off');
 	//endturn off auto complet for all app
-	//start navigate in all inputs using enter
-	$(".vertical").keypress(function(event) {
-        if(event.keyCode == 13) { 
-        textboxes = $("input.vertical");
-        
-        currentBoxNumber = textboxes.index(this);
-        if (textboxes[currentBoxNumber + 1] != null) {
-            nextBox = textboxes[currentBoxNumber + 1]
-            nextBox.focus();
-            nextBox.select();
-            event.preventDefault();
-            return false 
-            }
-        }
-    });
-	//end navigate in all inputs using enter
+
+	//select2 dropdown for the whole app
+	$(".select").select2();
+	//select2 dropdown for the whole app
+
+	//date for the whole app
+	$('.date').daterangepicker({
+		singleDatePicker: true,
+		locale: {
+			format: 'YYYY-MM-DD'
+		} 
+	});
+	//date for the whole app
+	
 	// start  confirm before delete
 	$('#delete').click(function(){
 		event.preventDefault();// prevent  the defalut
@@ -73,6 +71,11 @@ $(document).ready(function(){
 		  });
 		
 	});
-	
 	// end  confirm before delete
+	// sidebar links
+	// $('.side-bar-link').click(function(){
+	// 	$('.side-bar-link').removeClass('active');
+	// 	$(this).addClass('active');
+	// })
+	// sidebar links
 });
