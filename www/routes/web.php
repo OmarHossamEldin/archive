@@ -12,6 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['prefix','/'],function(){
+    
+    //Authenticated
+    Route::group(['middleware'=>'auth'],function(){
+    
+    });
+    //UnAuthenticated
+    Route::group(['middleware'=>'guest'],function(){
 
 Route::resources([
     'suitcase' => SuitCaseController::class,
@@ -30,4 +38,9 @@ Route::group(['prefix' => 'search'], function () {
 Route::group(['prefix' => 'database'], function () {
     Route:post('/backup', 'DatabaseBackupController@backup');
     Route::post('/restore', 'DatabaseBackupController@restore');
+
+    });
+
+Route::get('/','GateController@home')->name('login'); // HomePage => loginForm
+
 });
