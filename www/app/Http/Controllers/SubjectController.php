@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Subject;
 
 class SubjectController extends Controller
 {
@@ -35,9 +36,10 @@ class SubjectController extends Controller
      */
     public function store(Request $request)
     {
-        $validate_request = $request->validate([
+        $validated_request = $request->validate([
             'name' => 'required']);
-            Subject::create($validate_request);
+
+        Subject::create($validated_request);
     }
 
     /**
@@ -46,9 +48,9 @@ class SubjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Subject $subject)
     {
-        //
+        return $subject;
     }
 
     /**
@@ -80,8 +82,13 @@ class SubjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function delete($id)
+    public function destroy(Subject $subject)
+    { 
+        return $subject->delete();
+    }
+
+    public function search($keyword)
     {
-        return Subject::findorFail($id)->delete();
+        return Subject::where('name', 'like', '%' . $keyword . '%')->get();
     }
 }

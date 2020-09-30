@@ -15,6 +15,7 @@ class CreateDocumentsTable extends Migration
     {
         Schema::create('documents', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->string('serial');
             $table->string('type');
             $table->string('description')->nullable();

@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::resources([
+    'suitcase' => SuitCaseController::class,
+    'document' => DocumentController::class,
+    'organization' => OrganizationController::class,
+    'subject' => SubjectController::class,
+]);
+
+Route::group(['prefix' => 'search'], function () {
+    Route::get('/document/{keyword}','DocumentController@search');
+    Route::get('/subject/{keyword}','SubjectController@search');
+    Route::get('/suitcase/{keyword}','SuitCaseController@search');
+    Route::get('/organization/{keyword}','OrganizationController@search');
+});
+
+Route::group(['prefix' => 'database'], function () {
+    Route:post('/backup', 'DatabaseBackupController@backup');
+    Route::post('/restore', 'DatabaseBackupController@restore');
 });

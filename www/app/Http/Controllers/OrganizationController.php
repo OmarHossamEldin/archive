@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Organization;
 
 class OrganizationController extends Controller
 {
@@ -37,8 +38,10 @@ class OrganizationController extends Controller
     {
          $validated_request = $request->validate([
             'name'=>'required',
-            'organization_id' => 'required', ]);
-         Organization::create($validated_request);
+            'organization_id' => 'required',
+            ]);
+
+        Organization::create($validated_request);
     }
 
     /**
@@ -81,8 +84,13 @@ class OrganizationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function delete($id)
+    public function destroy(Organization $organization)
     {
-        return Organization::findorFail($id)->delete();
+        return $organization->delete();
+    }
+
+    public function search($keyword)
+    {
+        return Organization::where('name', 'like', '%' . $keyword. '%')->get();
     }
 }

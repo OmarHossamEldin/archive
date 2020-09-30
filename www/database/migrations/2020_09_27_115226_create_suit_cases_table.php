@@ -20,7 +20,7 @@ class CreateSuitCasesTable extends Migration
             $table->string('airline');
             $table->float('weight');
             $table->string('comment')->nullable();
-            $table->boolean('current_flag');
+            $table->boolean('current_flag')->default(false);
             $table->timestamps();
         });
     }
