@@ -25,8 +25,6 @@ class CreateDocumentsTable extends Migration
             $table->foreignId('suit_cases_id')->constrained('suit_cases')->onDelete('restrict');
             $table->string('file_path');
 
-
-
             $table->timestamps();
         });
     }

@@ -36,11 +36,12 @@ class OrganizationController extends Controller
      */
     public function store(Request $request)
     {
-         $validated_request = $request->validate([
-            'name'=>'required',
-            'organization_id' => 'required',
-            ]);
-
+        
+        $validated_request = $request->validate([
+            'name' => 'required',
+            'organization_id' => 'nullable',
+        ]);
+        
         Organization::create($validated_request);
     }
 
@@ -73,9 +74,14 @@ class OrganizationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Organization $organization)
     {
-        return Organization::findorFail($id)->update($request->all());
+        $validated_request = $request->validate([
+            'name' => 'nullable',
+            'organization_id' => 'nullable',
+        ]);
+        
+        $organization->update($validated_request);
     }
 
     /**

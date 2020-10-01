@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use App\Document;
+use App\SuitCase;
+
 
 /** 
  * A document is considered as a file
@@ -56,7 +59,7 @@ class DocumentController extends Controller
         $validated_request["name"] = $fileName;
 
         // store the file on disk inside its suit case(folder)
-        $path = $request->file('file_path')->store($suitcase);   
+        $path = $request->file('file_path')->storeAs($suitcase->name, $fileName);
 
         $validated_request["file_path"] = $path;
 
