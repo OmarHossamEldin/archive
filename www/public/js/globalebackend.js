@@ -50,7 +50,7 @@ $(document).ready(function () {
             method: "GET",
             success: (state) => {
                 if (state) {
-                    $('.checked-row:checked').attr('checked', false)
+                    $('.checked-row').prop('checked', false);
                     $('.suitcase-checkbox').removeClass('checked-row')
                     $('.suitcase-checkbox').attr('disabled', false);
                     $('tr').removeClass('alert alert-info');
