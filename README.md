@@ -1,6 +1,6 @@
 
 # Archive
-<p align="center"><img src="https://img.icons8.com/ios/380/000000/inventory-flow.png"/>
+<p align="center"><img src="https://raw.githubusercontent.com/OmarHossamEldin/archive/cacheissues/www/public/img/archive.png?token=AO7BLNMYRJBOVHCFJI7M4BS7QARS4"/ width='200px'>
 </p>
 
 Archive for storing docs.
