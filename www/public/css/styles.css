@@ -1,0 +1,105 @@
+body{padding:0;margin:0;background:#dadaef;font-family:'Droid Arabic Kufi',Segoe UI;overflow-x:hidden}
+@font-face{font-family:'Droid Arabic Kufi';src:url('../webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf')}
+input[type="text"],input[type="password"],input[type="number"],input[type="tel"],input[type="email"],select{direction: rtl; 
+    background:#f7f7f7;border:1px #999 solid;height:40px;padding-right:10px;border-radius:5px}
+.backButton{float:left;width:100px;margin-top:10px;clear:both}
+input[type="submit"]{cursor:pointer}
+button[type="submit"]{cursor:pointer}
+/*---------------------------------------Start Header Design--------------------------------------------------*/
+.header{height:60px;background:#262b36;margin:0}
+.header h3{float:right;color:#fff;height:60px;line-height:60px;padding-right:10px}
+/*----------------------------------------End Header Design---------------------------------------------------*/
+/*---------------------------------------Start footer Design--------------------------------------------------*/
+.footer{height:60px;background-color:#212529;text-align:  center;font-weight: bold;color:#fff;bottom:0px;position: fixed;}
+.footerapp{height:60px;background-color:#212529;text-align:  center;font-weight: bold;color:#fff;bottom:0px;}
+
+.footer h6{float:right;height:60px;line-height:60px;padding-right:10px}
+/*----------------------------------------End footer Design---------------------------------------------------*/
+
+/*--------------------------------------Start Dashboard Design-------------------------------------------------*/
+.dashbordManu {background:#262b36;color:#eee;padding:0;box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.8), 0 2px 12px 0 rgba(0, 0, 0, 0.8)}
+.dashbordManu ul{direction:rtl;list-style:none;width:100%;margin:0;padding:0}
+.dashbordManu ul li{text-align:center;border-bottom:1px #000 solid;cursor:pointer}
+.dashbordManu ul li:last-child, .dashbordManu ul .logout{border-bottom:none}
+.dashbordManu ul li span,.dashbordManu ul li a{display:block;padding:15px 0}
+.dashbordManu ul .logout a, .dashbordManu ul .reportDashboard a{padding:0}
+.dashbordManu ul li a{text-decoration:none;color:#eee}
+.dashbordManu ul li span:hover,.dashbordManu ul li a:hover{font-weight:bold}
+.salesSubDash,.stockSubDash,.importSubDash,.expenseSubDash,.purchasesSubDash,.supplierSubDash,.customerSubDash,.employerSubDash,.suitcaseDashboardSubDash{background:#343a47;
+    display:none}
+.treeSubMenu {
+    background-color: #343a47;
+}
+/* Left Dashboard Menu Design */
+.leftDashboard{background:#262b36;color:#eee;padding:0;box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.8), 0 2px 12px 0 rgba(0, 0, 0, 0.8); display: none;}
+/*---------------------------------------End Dashboard Design--------------------------------------------------*/
+
+/*--------------------------------------Start Login page Design-------------------------------------------------*/
+.loginCont{width:100%;text-align:center;margin:110px auto 0;box-shadow:0 2px 8px 0 rgba(0, 0, 0, 0.8), 0 2px 12px 0 rgba(0, 0, 0, 0.8);
+    padding:20px 0;border-radius:5px}
+.loginCont h3{font-weight:bold}
+.loginCont input[type="text"], .loginCont input[type="password"]{width:70%;height:45px}
+.loginCont input[type="text"]{margin:60px 0 20px}.loginCont input[type="password"]{margin-bottom:40px}
+.loginCont input[type="submit"]{width:70%;height:50px}
+@media all and (max-width:768px){.loginCont{width:60%}}
+@media all and (max-width:500px){.loginCont{width:80%}}
+/*---------------------------------------End Login page Design--------------------------------------------------*/
+
+/*-------------------------------------------Start Home Page----------------------------------------------------*/
+.welcomeMsg{border-bottom:1px #999 solid;width:100%;padding:50px 0;text-align:center}
+.welcomeMsg form{display:inline-block}
+.homeTable tr:last-child td{padding:30px 0}
+.homeTable td i{color:#c94646}
+.homeTable tr:last-child td i{color:#009944}
+.restore, .backup{float:left;margin:0 0 20px 10px;width:25%;}
+/*--------------------------------------------End Home Page-----------------------------------------------------*/
+
+/*------------Start ExpencesTable & payBillTable & packageBillTable & generalBillTable page Design--------------*/
+.expencesTable,.payBillTable,.packageBillTable,.generalBillTable{border:2px #555 solid;margin:40px auto;width:80%;direction:rtl}
+.expencesHeader,.payBillHeader,.packageBillHeader,.generalBillHeader{background:#262b36;color:#fff}
+.expencesTable td,.payBillTable td,.packageBillTable td,.generalBillTable td{padding:12px 0;border-bottom:1px #555 solid;text-align: 
+    center;border-left:1px #555 solid}
+.expencesTable td i,.payBillTable td i,.packageBillTable td i,.generalBillTable td i{cursor:pointer;color:#404c66}
+.expencesTable td i:hover,.payBillTable td i:hover,.packageBillTable td i:hover,.generalBillTable td i:hover{color:#262b36}
+.payBillTable td:last-child,.packageBillTable td:last-child,.generalBillTable td:last-child{padding:0}
+/*--------------End ExpencesTable & payBillTable & packageBillTable & generalBillTable page Design---------------*/
+
+/*----------------------------------------Start Date page Design------------------------------------------------*/
+.date label{font-size:18px;font-weight:bold;width:120px;margin-right:150px}
+.date #dom-id{width:30%;direction:ltr;margin-bottom:15px;padding-left:10px}
+.date .show{float:left;width:30%;margin:0 0 30px 40px}
+/*-----------------------------------------End Date page Design-------------------------------------------------*/
+  
+/*------------------Start EmployersTable,suppliersTable,customersTable,StockTable page Design-------------------*/
+.employersTable,.suppliersTable,.customersTable,.stockTable,.homeTable,.userTable{border:2px #555 solid;margin:40px auto;width:80%;direction:rtl}
+.employersHeader,.suppliersHeader,.customersHeader,.stockHeader,.homeHeader,.userHeader{background:#262b36;color:#fff}
+.employersTable td,.suppliersTable td,.customersTable td,.stockTable td,.homeTable td,.userTable td{padding:12px 0;border-bottom:1px #555 solid;text-align:center; 
+    border-left:1px #555 solid}
+.employersTable td i,.suppliersTable td i,.customersTable td i,.stockTable td i,.userTable td i{cursor:pointer;color:#404c66}
+.employersTable td i:hover,.suppliersTable td i:hover,.customersTable td i:hover,.stockTable td i:hover,.userTable td i:hover{color:#262b36}
+.employersTable td:last-child,.employersTable td:nth-child(4),.suppliersTable td:last-child,.suppliersTable td:nth-child(4),.customersTable td:last-child,.customersTable td:nth-child(4),.stockTable td:last-child,.userTable td:last-child{padding:0}
+/*--------------------End EmployersTable,suppliersTable,customersTable,StockTable page Design-------------------*/
+
+/*-------------Start EmployerDetails,supplierDetails,customerDetails,productDetails page Design-----------------*/
+.employerTable,.supplierTable,.customerTable,.productTable,.userDetailsTable{border:2px #555 solid;margin:40px auto;border-radius:5px;width:80%; 
+    direction:rtl}
+.employerTable label,.supplierTable label,.customerTable label,.productTable label,.userDetailsTable label{background:#262b36;color:#fff;text-align:center; 
+    margin:0;padding:12px 0;border-bottom:1px #555 solid}
+.employerTable p,.supplierTable p,.customerTable p,.productTable p ,.userDetailsTable p{border-bottom:1px #aaa solid;margin:0;padding:12px 10px 12px 0}
+.infoEdit, .salaryEdit,.deleteEmployer,.depitAction,.deleteSupplier,.deleteCustomer,.deleteProduct ,.deleteUser{float:left;height:40px;width:30%;
+    margin-right:10px}
+.productTable,.deleteProduct{margin-bottom:20px}
+/*-----------------End EmployerDetails,supplierDetails,customerDetails,productDetails page Design----------------*/
+/* Manipulation Bar */
+.manipulation-bar {
+    border: 2px rgba(0, 0, 0, 0.8) solid;
+    background-color: #eee
+}
+.manipulation-bar .row {
+    margin: 5px;
+}
+.link-container{
+    width:200pt;
+    margin:auto;
+    
+}

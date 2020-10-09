@@ -1,0 +1,1302 @@
+- 09:11:46.016 INFO: --------------------------------------------------------
+- 09:11:46.016 INFO: Started application
+- 09:11:46.016 INFO: Logging to: C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 09:11:46.016 INFO: Log level = DEBUG4
+- 09:11:46.016 INFO: Starting Mongoose 3.9c web server
+- 09:11:46.016 INFO: WWW directory: C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\public
+- 09:11:46.016 INFO: Index files: index.html,index.php
+- 09:11:46.016 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 09:11:46.016 INFO: CGI pattern: **.php$
+- 09:11:46.016 INFO: Hide files patterns: 
+- 09:11:46.016 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:11:46.047 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:11:46.063 INFO: Web server url: http://127.0.0.1:8000/
+- 09:11:46.063 INFO: remote_debugging_port = 54144
+- 09:11:46.063 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=54144
+- 09:11:48.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=0D69E0F402ED7D50A93B0A49569DDF22 --mojo-platform-channel-handle=1940 /prefetch:2
+- 09:11:48.891 DEBUG: App::OnContextInitialized()
+- 09:11:48.891 DEBUG: Window max width/height = 1840/992
+- 09:11:48.891 DEBUG: GetBrowserWindow(): not found, hwnd = 7340114
+- 09:11:48.891 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:11:48.000 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:11:48.000 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:11:48.000 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:11:48.000 DEBUG: StoreBrowserWindow(): hwnd = 7340114
+- 09:11:48.125 DEBUG: ClientHandler::OnAfterCreated()
+- 09:11:48.125 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:11:48.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=50842B5945843C11CA2322CC1F8E02C9 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=50842B5945843C11CA2322CC1F8E02C9 --renderer-client-id=3 --mojo-platform-channel-handle=2392 /prefetch:1
+- 09:11:48.172 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:11:48.125 DEBUG: OnBrowserCreated()
+[1009/091151.456:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:11:52.344 DEBUG: WM_DESTROY
+- 09:11:52.344 DEBUG: RemoveBrowserWindow(): hwnd = 7340114
+- 09:11:52.344 INFO: Stopping Mongoose web server
+- 09:11:52.344 DEBUG: Mongoose webserver stopped immediately
+- 09:11:52.438 DEBUG: OnBeforeClose() hwnd=1378182
+- 09:11:52.438 DEBUG: RemoveBrowserWindow(): hwnd = 1378182
+- 09:11:52.438 DEBUG: GetBrowserWindow(): not found, hwnd = 1378182
+- 09:11:52.438 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:11:52.438 DEBUG: Calling CefQuitMessageLoop()
+- 09:11:53.235 INFO: Ended application
+- 09:11:53.235 INFO: --------------------------------------------------------
+- 09:12:18.000 INFO: --------------------------------------------------------
+- 09:12:18.000 INFO: Started application
+- 09:12:18.000 INFO: Logging to: C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 09:12:18.000 INFO: Log level = DEBUG4
+- 09:12:18.000 INFO: Starting Mongoose 3.9c web server
+- 09:12:18.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\public
+- 09:12:18.000 INFO: Index files: index.html,index.php
+- 09:12:18.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 09:12:18.000 INFO: CGI pattern: **.php$
+- 09:12:18.000 INFO: Hide files patterns: 
+- 09:12:18.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:12:18.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:12:18.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:12:18.000 INFO: remote_debugging_port = 61782
+- 09:12:18.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=61782
+- 09:12:19.390 DEBUG: App::OnContextInitialized()
+- 09:12:19.390 DEBUG: Window max width/height = 1840/992
+- 09:12:19.406 DEBUG: GetBrowserWindow(): not found, hwnd = 1181088
+- 09:12:19.406 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:12:19.406 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:12:19.406 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:12:19.406 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:12:19.406 DEBUG: StoreBrowserWindow(): hwnd = 1181088
+- 09:12:19.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=C225A657A67CF4CD8BE3892B4175D7A1 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:12:19.437 DEBUG: ClientHandler::OnAfterCreated()
+- 09:12:19.437 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:12:19.437 DEBUG: OnLoadingStateChange: loading=1, url=
+[1009/091219.224:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:12:19.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=19239DD88B402DEB9A4E720775C1104E --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=19239DD88B402DEB9A4E720775C1104E --renderer-client-id=3 --mojo-platform-channel-handle=2324 /prefetch:1
+- 09:12:19.015 DEBUG: OnBrowserCreated()
+- 09:12:20.734 INFO: GET 200 /
+- 09:12:20.765 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:12:37.422 DEBUG: WM_DESTROY
+- 09:12:37.422 DEBUG: RemoveBrowserWindow(): hwnd = 1181088
+- 09:12:37.422 INFO: Stopping Mongoose web server
+- 09:12:37.422 DEBUG: Mongoose webserver stopped immediately
+- 09:12:37.422 DEBUG: OnBeforeClose() hwnd=2425820
+- 09:12:37.422 DEBUG: RemoveBrowserWindow(): hwnd = 2425820
+- 09:12:37.422 DEBUG: GetBrowserWindow(): not found, hwnd = 2425820
+- 09:12:37.422 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:12:37.422 DEBUG: Calling CefQuitMessageLoop()
+- 09:12:37.953 DEBUG: OnBrowserDestroyed()
+- 09:12:37.437 INFO: Ended application
+- 09:12:37.437 INFO: --------------------------------------------------------
+- 09:12:38.000 INFO: --------------------------------------------------------
+- 09:12:38.000 INFO: Started application
+- 09:12:38.000 INFO: Logging to: C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 09:12:38.000 INFO: Log level = DEBUG4
+- 09:12:38.000 INFO: Starting Mongoose 3.9c web server
+- 09:12:38.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\public
+- 09:12:38.000 INFO: Index files: index.html,index.php
+- 09:12:38.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 09:12:38.000 INFO: CGI pattern: **.php$
+- 09:12:38.000 INFO: Hide files patterns: 
+- 09:12:38.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:12:38.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:12:38.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:12:38.000 INFO: remote_debugging_port = 61709
+- 09:12:38.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=61709
+- 09:12:39.406 DEBUG: App::OnContextInitialized()
+- 09:12:39.406 DEBUG: Window max width/height = 1840/992
+- 09:12:39.406 DEBUG: GetBrowserWindow(): not found, hwnd = 1508100
+- 09:12:39.406 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:12:39.406 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:12:39.406 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:12:39.406 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:12:39.406 DEBUG: StoreBrowserWindow(): hwnd = 1508100
+- 09:12:39.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=6E22631E0929FC1BAE59A97AAC60D8D5 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:12:39.437 DEBUG: ClientHandler::OnAfterCreated()
+- 09:12:39.437 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:12:39.453 DEBUG: OnLoadingStateChange: loading=1, url=
+[1009/091239.335:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:12:39.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=F35BC3062FFFE5672F2FAC7DD99060AD --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=F35BC3062FFFE5672F2FAC7DD99060AD --renderer-client-id=3 --mojo-platform-channel-handle=2380 /prefetch:1
+- 09:12:39.016 DEBUG: OnBrowserCreated()
+- 09:12:40.687 INFO: GET 200 /
+- 09:12:40.687 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:13:08.734 DEBUG: WM_DESTROY
+- 09:13:08.734 DEBUG: RemoveBrowserWindow(): hwnd = 1508100
+- 09:13:08.734 INFO: Stopping Mongoose web server
+- 09:13:08.734 DEBUG: Mongoose webserver stopped immediately
+- 09:13:08.734 DEBUG: OnBeforeClose() hwnd=3081626
+- 09:13:08.734 DEBUG: RemoveBrowserWindow(): hwnd = 3081626
+- 09:13:08.734 DEBUG: GetBrowserWindow(): not found, hwnd = 3081626
+- 09:13:08.734 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:13:08.734 DEBUG: Calling CefQuitMessageLoop()
+- 09:13:08.282 DEBUG: OnBrowserDestroyed()
+- 09:13:08.796 INFO: Ended application
+- 09:13:08.796 INFO: --------------------------------------------------------
+- 09:14:03.000 INFO: --------------------------------------------------------
+- 09:14:03.000 INFO: Started application
+- 09:14:03.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:14:03.000 INFO: Log level = DEBUG4
+- 09:14:03.000 INFO: Starting Mongoose 3.9c web server
+- 09:14:03.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:14:03.000 INFO: Index files: index.html,index.php
+- 09:14:03.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:14:03.000 INFO: CGI pattern: **.php$
+- 09:14:03.000 INFO: Hide files patterns: 
+- 09:14:03.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:14:03.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:14:03.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:14:03.000 INFO: remote_debugging_port = 54441
+- 09:14:03.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=54441
+- 09:14:03.406 DEBUG: App::OnContextInitialized()
+- 09:14:03.406 DEBUG: Window max width/height = 1840/992
+- 09:14:03.406 DEBUG: GetBrowserWindow(): not found, hwnd = 2164444
+- 09:14:03.406 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:14:03.406 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:14:03.406 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:14:03.406 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:14:03.406 DEBUG: StoreBrowserWindow(): hwnd = 2164444
+- 09:14:03.422 DEBUG: ClientHandler::OnAfterCreated()
+- 09:14:03.422 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:14:03.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=E3F32782534ED37A233A674ABFD3ADF5 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:14:03.438 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:14:03.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=EA48225628246DFB6D5CA845AD650AEE --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=EA48225628246DFB6D5CA845AD650AEE --renderer-client-id=3 --mojo-platform-channel-handle=2380 /prefetch:1
+[1009/091403.975:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:14:03.032 DEBUG: OnBrowserCreated()
+- 09:14:05.719 INFO: GET 200 /
+- 09:14:05.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:14:28.985 DEBUG: WM_DESTROY
+- 09:14:28.985 DEBUG: RemoveBrowserWindow(): hwnd = 2164444
+- 09:14:28.985 INFO: Stopping Mongoose web server
+- 09:14:28.985 DEBUG: Mongoose webserver stopped immediately
+- 09:14:28.985 DEBUG: OnBeforeClose() hwnd=2491292
+- 09:14:28.985 DEBUG: RemoveBrowserWindow(): hwnd = 2491292
+- 09:14:28.985 DEBUG: GetBrowserWindow(): not found, hwnd = 2491292
+- 09:14:28.985 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:14:28.985 DEBUG: Calling CefQuitMessageLoop()
+- 09:14:28.000 INFO: Ended application
+- 09:14:28.000 INFO: --------------------------------------------------------
+- 09:14:56.000 INFO: --------------------------------------------------------
+- 09:14:56.000 INFO: Started application
+- 09:14:56.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:14:56.000 INFO: Log level = DEBUG4
+- 09:14:56.000 INFO: Starting Mongoose 3.9c web server
+- 09:14:56.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:14:56.000 INFO: Index files: index.html,index.php
+- 09:14:56.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:14:56.000 INFO: CGI pattern: **.php$
+- 09:14:56.000 INFO: Hide files patterns: 
+- 09:14:56.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:14:56.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:14:56.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:14:56.000 INFO: remote_debugging_port = 54778
+- 09:14:56.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=54778
+- 09:14:56.391 DEBUG: App::OnContextInitialized()
+- 09:14:56.391 DEBUG: Window max width/height = 1840/992
+- 09:14:56.407 DEBUG: GetBrowserWindow(): not found, hwnd = 1770496
+- 09:14:56.407 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:14:56.407 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:14:56.407 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:14:56.407 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:14:56.407 DEBUG: StoreBrowserWindow(): hwnd = 1770496
+- 09:14:56.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=3E4274AED374F7F21DD767D920C8F951 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:14:56.422 DEBUG: ClientHandler::OnAfterCreated()
+- 09:14:56.422 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:14:56.438 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:14:56.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=4839BE3F95A5B57C784674A8640DB1CC --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=4839BE3F95A5B57C784674A8640DB1CC --renderer-client-id=3 --mojo-platform-channel-handle=2384 /prefetch:1
+[1009/091456.928:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:14:56.016 DEBUG: OnBrowserCreated()
+- 09:14:58.078 INFO: GET 200 /
+- 09:14:58.078 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:17:00.000 INFO: --------------------------------------------------------
+- 09:17:00.000 INFO: Started application
+- 09:17:00.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:17:00.000 INFO: Log level = DEBUG4
+- 09:17:00.000 INFO: Starting Mongoose 3.9c web server
+- 09:17:00.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:17:00.000 INFO: Index files: index.html,index.php
+- 09:17:00.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:17:00.000 INFO: CGI pattern: **.php$
+- 09:17:00.000 INFO: Hide files patterns: 
+- 09:17:00.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:17:00.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:17:00.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:17:00.000 INFO: remote_debugging_port = 56589
+- 09:17:00.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=56589
+- 09:17:00.406 DEBUG: App::OnContextInitialized()
+- 09:17:00.406 DEBUG: Window max width/height = 1840/992
+- 09:17:00.422 DEBUG: GetBrowserWindow(): not found, hwnd = 1771620
+- 09:17:00.422 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:17:00.422 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:17:00.422 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:17:00.422 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:17:00.422 DEBUG: StoreBrowserWindow(): hwnd = 1771620
+- 09:17:00.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=CA4BAFBAFAA998C723C8AD37FF60A9FA --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:17:00.453 DEBUG: ClientHandler::OnAfterCreated()
+- 09:17:00.453 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:17:00.453 DEBUG: OnLoadingStateChange: loading=1, url=
+[1009/091700.753:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:17:00.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=203CE26A92CB141D402922E14B54A05A --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=203CE26A92CB141D402922E14B54A05A --renderer-client-id=3 --mojo-platform-channel-handle=2396 /prefetch:1
+- 09:17:00.016 DEBUG: OnBrowserCreated()
+[1009/091700.812:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1009/091700.813:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\NY Spider\Desktop\archive\webcache\GPUCache to C:\Users\NY Spider\Desktop\archive\webcache\old_GPUCache_000
+[1009/091700.813:ERROR:disk_cache.cc(132)] Unable to create cache
+[1009/091700.813:ERROR:shader_disk_cache.cc(593)] Shader Cache Creation failed: -2
+[1009/091700.815:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1009/091700.815:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\NY Spider\Desktop\archive\webcache\Cache to C:\Users\NY Spider\Desktop\archive\webcache\old_Cache_000
+[1009/091700.815:ERROR:disk_cache.cc(132)] Unable to create cache
+- 09:17:02.828 INFO: GET 200 /
+- 09:17:02.015 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:17:06.312 DEBUG: ClientHandler::OnAfterCreated()
+- 09:17:06.312 DEBUG: GetBrowserWindow(): not found, hwnd = 2491372
+- 09:17:06.312 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 09:17:06.312 DEBUG: StoreBrowserWindow(): hwnd = 2491372
+- 09:17:06.328 DEBUG: Centering popup window relative to its parent
+- 09:17:06.328 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:17:06.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=0A77F58CD660870CDB33BA33BB6F3FFD --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=0A77F58CD660870CDB33BA33BB6F3FFD --renderer-client-id=4 --mojo-platform-channel-handle=2700 /prefetch:1
+- 09:17:06.016 DEBUG: OnBrowserCreated()
+- 09:17:06.031 DEBUG: OnContextCreated()
+- 09:17:06.500 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 09:17:06.079 DEBUG: OnContextCreated()
+- 09:17:12.453 DEBUG: OnBeforeClose() hwnd=2491372
+- 09:17:12.453 DEBUG: RemoveBrowserWindow(): hwnd = 2491372
+- 09:17:12.094 DEBUG: OnBrowserDestroyed()
+- 09:17:30.015 INFO: --------------------------------------------------------
+- 09:17:30.015 INFO: Started application
+- 09:17:30.015 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:17:30.015 INFO: Log level = DEBUG4
+- 09:17:30.015 INFO: Starting Mongoose 3.9c web server
+- 09:17:30.015 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public\
+- 09:17:30.015 INFO: Index files: index.html,index.php
+- 09:17:30.015 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:17:30.015 INFO: CGI pattern: **.php$
+- 09:17:30.015 INFO: Hide files patterns: 
+- 09:17:30.015 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:17:30.015 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:17:30.015 INFO: Web server url: http://127.0.0.1:8000/
+- 09:17:30.015 INFO: remote_debugging_port = 56228
+- 09:17:30.015 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=56228
+- 09:17:30.468 DEBUG: App::OnContextInitialized()
+- 09:17:30.468 DEBUG: Window max width/height = 1840/992
+- 09:17:30.468 DEBUG: GetBrowserWindow(): not found, hwnd = 2295276
+- 09:17:30.468 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:17:30.468 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:17:30.468 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:17:30.468 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:17:30.468 DEBUG: StoreBrowserWindow(): hwnd = 2295276
+- 09:17:30.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=FD67419601B8D892A2EADD0A015E06AF --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:17:30.500 DEBUG: ClientHandler::OnAfterCreated()
+- 09:17:30.500 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:17:30.515 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:17:30.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=CBC13B86DC434577739D08969501AD75 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=CBC13B86DC434577739D08969501AD75 --renderer-client-id=3 --mojo-platform-channel-handle=2372 /prefetch:1
+[1009/091730.604:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:17:30.016 DEBUG: OnBrowserCreated()
+[1009/091730.625:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1009/091730.625:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\NY Spider\Desktop\archive\webcache\GPUCache to C:\Users\NY Spider\Desktop\archive\webcache\old_GPUCache_000
+[1009/091730.625:ERROR:disk_cache.cc(132)] Unable to create cache
+[1009/091730.625:ERROR:shader_disk_cache.cc(593)] Shader Cache Creation failed: -2
+[1009/091730.627:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1009/091730.627:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\NY Spider\Desktop\archive\webcache\Cache to C:\Users\NY Spider\Desktop\archive\webcache\old_Cache_000
+[1009/091730.627:ERROR:disk_cache.cc(132)] Unable to create cache
+- 09:17:31.344 INFO: GET 200 /
+- 09:17:31.734 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:17:34.234 DEBUG: WM_DESTROY
+- 09:17:34.234 DEBUG: RemoveBrowserWindow(): hwnd = 2295276
+- 09:17:34.234 INFO: Stopping Mongoose web server
+- 09:17:34.234 DEBUG: Mongoose webserver stopped immediately
+- 09:17:34.234 DEBUG: OnBeforeClose() hwnd=721774
+- 09:17:34.234 DEBUG: RemoveBrowserWindow(): hwnd = 721774
+- 09:17:34.234 DEBUG: GetBrowserWindow(): not found, hwnd = 721774
+- 09:17:34.234 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:17:34.234 DEBUG: Calling CefQuitMessageLoop()
+- 09:17:34.703 DEBUG: OnBrowserDestroyed()
+- 09:17:34.265 INFO: Ended application
+- 09:17:34.265 INFO: --------------------------------------------------------
+- 09:17:36.250 DEBUG: WM_DESTROY
+- 09:17:36.250 DEBUG: RemoveBrowserWindow(): hwnd = 1771620
+- 09:17:36.250 INFO: Stopping Mongoose web server
+- 09:17:36.250 DEBUG: Mongoose webserver stopped immediately
+- 09:17:36.265 DEBUG: OnBeforeClose() hwnd=3343228
+- 09:17:36.265 DEBUG: RemoveBrowserWindow(): hwnd = 3343228
+- 09:17:36.265 DEBUG: GetBrowserWindow(): not found, hwnd = 3343228
+- 09:17:36.265 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:17:36.265 DEBUG: Calling CefQuitMessageLoop()
+- 09:17:36.750 DEBUG: OnBrowserDestroyed()
+- 09:17:36.297 INFO: Ended application
+- 09:17:36.297 INFO: --------------------------------------------------------
+- 09:18:20.000 INFO: --------------------------------------------------------
+- 09:18:20.000 INFO: Started application
+- 09:18:20.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:18:20.000 INFO: Log level = DEBUG4
+- 09:18:20.000 INFO: Starting Mongoose 3.9c web server
+- 09:18:20.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public\
+- 09:18:20.000 INFO: Index files: index.html,index.php
+- 09:18:20.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:18:20.000 INFO: CGI pattern: **.php$
+- 09:18:20.000 INFO: Hide files patterns: 
+- 09:18:20.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:18:20.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:18:20.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:18:20.000 INFO: remote_debugging_port = 51565
+- 09:18:20.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=51565
+- 09:18:21.407 DEBUG: App::OnContextInitialized()
+- 09:18:21.407 DEBUG: Window max width/height = 1840/992
+- 09:18:21.407 DEBUG: GetBrowserWindow(): not found, hwnd = 2229134
+- 09:18:21.407 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:18:21.407 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:18:21.407 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:18:21.407 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:18:21.407 DEBUG: StoreBrowserWindow(): hwnd = 2229134
+- 09:18:21.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=B88A8790F60732970BCD304F46DB48EC --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:18:21.438 DEBUG: ClientHandler::OnAfterCreated()
+- 09:18:21.438 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:18:21.438 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:18:21.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=5E5EAFE30A9E5EE9A8B475DD17A52E31 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=5E5EAFE30A9E5EE9A8B475DD17A52E31 --renderer-client-id=3 --mojo-platform-channel-handle=2376 /prefetch:1
+[1009/091821.381:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:18:21.031 DEBUG: OnBrowserCreated()
+[1009/091821.406:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1009/091821.406:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\NY Spider\Desktop\archive\webcache\GPUCache to C:\Users\NY Spider\Desktop\archive\webcache\old_GPUCache_000
+[1009/091821.406:ERROR:disk_cache.cc(132)] Unable to create cache
+[1009/091821.406:ERROR:shader_disk_cache.cc(593)] Shader Cache Creation failed: -2
+[1009/091821.407:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1009/091821.408:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\NY Spider\Desktop\archive\webcache\Cache to C:\Users\NY Spider\Desktop\archive\webcache\old_Cache_000
+[1009/091821.408:ERROR:disk_cache.cc(132)] Unable to create cache
+- 09:18:22.125 INFO: GET 200 /
+- 09:18:22.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:18:25.750 DEBUG: WM_DESTROY
+- 09:18:25.750 DEBUG: RemoveBrowserWindow(): hwnd = 2229134
+- 09:18:25.750 INFO: Stopping Mongoose web server
+- 09:18:25.750 DEBUG: Mongoose webserver stopped immediately
+- 09:18:25.750 DEBUG: OnBeforeClose() hwnd=1246978
+- 09:18:25.750 DEBUG: RemoveBrowserWindow(): hwnd = 1246978
+- 09:18:25.750 DEBUG: GetBrowserWindow(): not found, hwnd = 1246978
+- 09:18:25.750 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:18:25.750 DEBUG: Calling CefQuitMessageLoop()
+- 09:18:25.312 DEBUG: OnBrowserDestroyed()
+- 09:18:25.813 INFO: Ended application
+- 09:18:25.813 INFO: --------------------------------------------------------
+- 09:18:55.625 DEBUG: WM_DESTROY
+- 09:18:55.625 DEBUG: RemoveBrowserWindow(): hwnd = 1770496
+- 09:18:55.625 INFO: Stopping Mongoose web server
+- 09:18:55.625 DEBUG: Mongoose webserver stopped immediately
+- 09:18:55.641 DEBUG: OnBeforeClose() hwnd=1508712
+- 09:18:55.641 DEBUG: RemoveBrowserWindow(): hwnd = 1508712
+- 09:18:55.641 DEBUG: GetBrowserWindow(): not found, hwnd = 1508712
+- 09:18:55.641 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:18:55.641 DEBUG: Calling CefQuitMessageLoop()
+- 09:18:55.172 DEBUG: OnBrowserDestroyed()
+- 09:18:55.688 INFO: Ended application
+- 09:18:55.688 INFO: --------------------------------------------------------
+- 09:20:25.016 INFO: --------------------------------------------------------
+- 09:20:25.016 INFO: Started application
+- 09:20:25.016 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:20:25.016 INFO: Log level = DEBUG4
+- 09:20:25.016 INFO: Starting Mongoose 3.9c web server
+- 09:20:25.016 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:20:25.016 INFO: Index files: index.html,index.php
+- 09:20:25.016 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:20:25.016 INFO: CGI pattern: **.php$
+- 09:20:25.016 INFO: Hide files patterns: 
+- 09:20:25.016 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:20:25.016 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:20:25.016 INFO: Web server url: http://127.0.0.1:8000/
+- 09:20:25.016 INFO: remote_debugging_port = 53915
+- 09:20:25.016 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=53915
+- 09:20:25.407 DEBUG: App::OnContextInitialized()
+- 09:20:25.407 DEBUG: Window max width/height = 1840/992
+- 09:20:25.407 DEBUG: GetBrowserWindow(): not found, hwnd = 1705784
+- 09:20:25.407 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:20:25.407 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:20:25.407 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:20:25.407 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:20:25.407 DEBUG: StoreBrowserWindow(): hwnd = 1705784
+- 09:20:25.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=824B8DE722E32E0F72599ADF285BFB1B --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:20:25.438 DEBUG: ClientHandler::OnAfterCreated()
+- 09:20:25.438 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:20:25.438 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:20:25.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=A3D7C51C0FEBC2A7DFFD81EE6888CE71 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=A3D7C51C0FEBC2A7DFFD81EE6888CE71 --renderer-client-id=3 --mojo-platform-channel-handle=2372 /prefetch:1
+[1009/092025.750:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:20:25.031 DEBUG: OnBrowserCreated()
+- 09:20:26.688 INFO: GET 200 /
+- 09:20:26.688 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:20:32.969 DEBUG: WM_DESTROY
+- 09:20:32.969 DEBUG: RemoveBrowserWindow(): hwnd = 1705784
+- 09:20:32.969 INFO: Stopping Mongoose web server
+- 09:20:32.969 DEBUG: Mongoose webserver stopped immediately
+- 09:20:32.969 DEBUG: OnBeforeClose() hwnd=1442974
+- 09:20:32.969 DEBUG: RemoveBrowserWindow(): hwnd = 1442974
+- 09:20:32.969 DEBUG: GetBrowserWindow(): not found, hwnd = 1442974
+- 09:20:32.969 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:20:32.969 DEBUG: Calling CefQuitMessageLoop()
+- 09:20:32.016 INFO: Ended application
+- 09:20:32.016 INFO: --------------------------------------------------------
+- 09:21:27.062 INFO: --------------------------------------------------------
+- 09:21:27.062 INFO: Started application
+- 09:21:27.062 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:21:27.062 INFO: Log level = DEBUG4
+- 09:21:27.062 INFO: Starting Mongoose 3.9c web server
+- 09:21:27.062 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:21:27.062 INFO: Index files: index.html,index.php
+- 09:21:27.062 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:21:27.062 INFO: CGI pattern: **.php$
+- 09:21:27.062 INFO: Hide files patterns: 
+- 09:21:27.062 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:21:27.062 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:21:27.062 INFO: Web server url: http://127.0.0.1:65518/
+- 09:21:27.078 INFO: remote_debugging_port = 55096
+- 09:21:27.078 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=55096
+- 09:21:27.468 DEBUG: App::OnContextInitialized()
+- 09:21:27.468 DEBUG: Window max width/height = 1840/992
+- 09:21:27.468 DEBUG: GetBrowserWindow(): not found, hwnd = 2098642
+- 09:21:27.468 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:21:27.468 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:21:27.468 DEBUG: StoreBrowserWindow(): hwnd = 2098642
+- 09:21:27.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=851CB9E3C1A779E49A72AF4CE0D3F094 --mojo-platform-channel-handle=1944 /prefetch:2
+- 09:21:27.484 DEBUG: ClientHandler::OnAfterCreated()
+- 09:21:27.484 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:21:27.500 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:21:27.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=93656B68958691C7F3C5E7BC6920CE7F --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=93656B68958691C7F3C5E7BC6920CE7F --renderer-client-id=3 --mojo-platform-channel-handle=2408 /prefetch:1
+[1009/092127.760:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:21:27.016 DEBUG: OnBrowserCreated()
+- 09:21:28.703 INFO: GET 200 /
+- 09:21:28.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65518/
+- 09:22:26.093 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:65518/
+- 09:22:26.218 INFO: GET 200 /
+- 09:22:26.218 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:65518/
+- 09:22:33.406 DEBUG: WM_DESTROY
+- 09:22:33.406 DEBUG: RemoveBrowserWindow(): hwnd = 2098642
+- 09:22:33.406 INFO: Stopping Mongoose web server
+- 09:22:33.406 DEBUG: Mongoose webserver stopped immediately
+- 09:22:33.406 DEBUG: OnBeforeClose() hwnd=6358558
+- 09:22:33.406 DEBUG: RemoveBrowserWindow(): hwnd = 6358558
+- 09:22:33.406 DEBUG: GetBrowserWindow(): not found, hwnd = 6358558
+- 09:22:33.406 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:22:33.406 DEBUG: Calling CefQuitMessageLoop()
+- 09:22:33.906 DEBUG: OnBrowserDestroyed()
+- 09:22:33.453 INFO: Ended application
+- 09:22:33.453 INFO: --------------------------------------------------------
+- 09:24:07.000 INFO: --------------------------------------------------------
+- 09:24:07.000 INFO: Started application
+- 09:24:07.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:24:07.000 INFO: Log level = DEBUG4
+- 09:24:07.000 INFO: Starting Mongoose 3.9c web server
+- 09:24:07.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:24:07.000 INFO: Index files: index.html,index.php
+- 09:24:07.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:24:07.000 INFO: CGI pattern: **.php$
+- 09:24:07.000 INFO: Hide files patterns: 
+- 09:24:07.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:24:07.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:24:07.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:24:07.000 INFO: remote_debugging_port = 65373
+- 09:24:07.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=65373
+- 09:24:07.407 DEBUG: App::OnContextInitialized()
+- 09:24:07.407 DEBUG: Window max width/height = 1840/992
+- 09:24:07.407 DEBUG: GetBrowserWindow(): not found, hwnd = 8127348
+- 09:24:07.407 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:24:07.407 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:24:07.407 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:24:07.407 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:24:07.407 DEBUG: StoreBrowserWindow(): hwnd = 8127348
+- 09:24:07.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=61859285A02AE082D489A64A9FAE87D8 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:24:07.438 DEBUG: ClientHandler::OnAfterCreated()
+- 09:24:07.438 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:24:07.438 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:24:07.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=7626D5A8241FEBA6B3F223A60CF1551A --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=7626D5A8241FEBA6B3F223A60CF1551A --renderer-client-id=3 --mojo-platform-channel-handle=2316 /prefetch:1
+[1009/092407.756:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:24:07.016 DEBUG: OnBrowserCreated()
+- 09:24:08.688 INFO: GET 200 /
+- 09:24:08.688 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:24:11.547 DEBUG: WM_DESTROY
+- 09:24:11.547 DEBUG: RemoveBrowserWindow(): hwnd = 8127348
+- 09:24:11.547 INFO: Stopping Mongoose web server
+- 09:24:11.563 DEBUG: Mongoose webserver stopped immediately
+- 09:24:11.563 DEBUG: OnBeforeClose() hwnd=9897348
+- 09:24:11.563 DEBUG: RemoveBrowserWindow(): hwnd = 9897348
+- 09:24:11.563 DEBUG: GetBrowserWindow(): not found, hwnd = 9897348
+- 09:24:11.563 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:24:11.563 DEBUG: Calling CefQuitMessageLoop()
+- 09:24:11.594 INFO: Ended application
+- 09:24:11.594 INFO: --------------------------------------------------------
+- 09:25:06.062 INFO: --------------------------------------------------------
+- 09:25:06.062 INFO: Started application
+- 09:25:06.062 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:25:06.062 INFO: Log level = DEBUG4
+- 09:25:06.062 INFO: Starting Mongoose 3.9c web server
+- 09:25:06.062 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www
+- 09:25:06.062 INFO: Index files: index.html,index.php
+- 09:25:06.062 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:25:06.062 INFO: CGI pattern: **.php$
+- 09:25:06.062 INFO: Hide files patterns: 
+- 09:25:06.062 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:25:06.062 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:25:06.062 INFO: Web server url: http://127.0.0.1:49278/
+- 09:25:06.062 INFO: remote_debugging_port = 58852
+- 09:25:06.062 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=58852
+- 09:25:07.469 DEBUG: App::OnContextInitialized()
+- 09:25:07.469 DEBUG: Window max width/height = 1840/992
+- 09:25:07.484 DEBUG: GetBrowserWindow(): not found, hwnd = 2164552
+- 09:25:07.484 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:25:07.484 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:25:07.484 DEBUG: StoreBrowserWindow(): hwnd = 2164552
+- 09:25:07.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=00B396F81DED3F5E7C1CE87163163201 --mojo-platform-channel-handle=1944 /prefetch:2
+- 09:25:07.500 DEBUG: ClientHandler::OnAfterCreated()
+- 09:25:07.500 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:25:07.516 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:25:07.015 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=1A463DEFB9A9FF59697F7D53679F4A09 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=1A463DEFB9A9FF59697F7D53679F4A09 --renderer-client-id=3 --mojo-platform-channel-handle=2404 /prefetch:1
+[1009/092507.382:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:25:07.031 DEBUG: OnBrowserCreated()
+- 09:25:08.578 INFO: GET 200 /
+- 09:25:08.625 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:49278/
+- 09:25:13.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:49278/
+- 09:25:13.719 INFO: GET 200 /public/
+- 09:25:13.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:49278/public/
+- 09:26:06.000 INFO: --------------------------------------------------------
+- 09:26:06.000 INFO: Started application
+- 09:26:06.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:26:06.000 INFO: Log level = DEBUG4
+- 09:26:06.000 INFO: Starting Mongoose 3.9c web server
+- 09:26:06.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:26:06.000 INFO: Index files: index.html,index.php
+- 09:26:06.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:26:06.000 INFO: CGI pattern: **.php$
+- 09:26:06.000 INFO: Hide files patterns: 
+- 09:26:06.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:26:06.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:26:06.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:26:06.000 INFO: remote_debugging_port = 56786
+- 09:26:06.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=56786
+- 09:26:07.390 DEBUG: App::OnContextInitialized()
+- 09:26:07.390 DEBUG: Window max width/height = 1840/992
+- 09:26:07.390 DEBUG: GetBrowserWindow(): not found, hwnd = 2687886
+- 09:26:07.390 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:26:07.390 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:26:07.390 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:26:07.390 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:26:07.390 DEBUG: StoreBrowserWindow(): hwnd = 2687886
+- 09:26:07.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=204F04ADD38322DB52C7A31983E55297 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:26:07.422 DEBUG: ClientHandler::OnAfterCreated()
+- 09:26:07.422 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:26:07.422 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:26:07.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=B48465658570FEAD4A0770CE3555324A --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=B48465658570FEAD4A0770CE3555324A --renderer-client-id=3 --mojo-platform-channel-handle=2372 /prefetch:1
+[1009/092607.349:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:26:07.032 DEBUG: OnBrowserCreated()
+- 09:26:08.656 INFO: GET 200 /
+- 09:26:08.656 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:26:12.875 DEBUG: WM_DESTROY
+- 09:26:12.875 DEBUG: RemoveBrowserWindow(): hwnd = 2687886
+- 09:26:12.875 INFO: Stopping Mongoose web server
+- 09:26:12.875 DEBUG: Mongoose webserver stopped immediately
+- 09:26:12.875 DEBUG: OnBeforeClose() hwnd=1508736
+- 09:26:12.875 DEBUG: RemoveBrowserWindow(): hwnd = 1508736
+- 09:26:12.875 DEBUG: GetBrowserWindow(): not found, hwnd = 1508736
+- 09:26:12.875 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:26:12.875 DEBUG: Calling CefQuitMessageLoop()
+- 09:26:12.922 INFO: Ended application
+- 09:26:12.922 INFO: --------------------------------------------------------
+- 09:26:27.000 INFO: --------------------------------------------------------
+- 09:26:27.000 INFO: Started application
+- 09:26:27.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:26:27.000 INFO: Log level = DEBUG4
+- 09:26:27.000 INFO: Starting Mongoose 3.9c web server
+- 09:26:27.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:26:27.000 INFO: Index files: index.html,index.php
+- 09:26:27.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:26:27.000 INFO: CGI pattern: **.php$
+- 09:26:27.000 INFO: Hide files patterns: 
+- 09:26:27.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:26:27.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:26:27.016 INFO: Web server url: http://127.0.0.1:8000/
+- 09:26:27.016 INFO: remote_debugging_port = 54117
+- 09:26:27.016 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=54117
+- 09:26:27.422 DEBUG: App::OnContextInitialized()
+- 09:26:27.422 DEBUG: Window max width/height = 1840/992
+- 09:26:27.422 DEBUG: GetBrowserWindow(): not found, hwnd = 1639808
+- 09:26:27.422 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:26:27.422 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:26:27.422 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:26:27.422 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:26:27.422 DEBUG: StoreBrowserWindow(): hwnd = 1639808
+- 09:26:27.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=2A1735722DB9F8FA0F4058E3FADB94A0 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:26:27.453 DEBUG: ClientHandler::OnAfterCreated()
+- 09:26:27.453 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:26:27.453 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:26:27.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=13EE8DCD51FC52694DBD7FA36AEA7A95 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=13EE8DCD51FC52694DBD7FA36AEA7A95 --renderer-client-id=3 --mojo-platform-channel-handle=2372 /prefetch:1
+[1009/092627.706:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:26:27.031 DEBUG: OnBrowserCreated()
+- 09:26:28.687 INFO: GET 200 /
+- 09:26:28.687 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:26:31.859 DEBUG: WM_DESTROY
+- 09:26:31.859 DEBUG: RemoveBrowserWindow(): hwnd = 1639808
+- 09:26:31.859 INFO: Stopping Mongoose web server
+- 09:26:31.859 DEBUG: Mongoose webserver stopped immediately
+- 09:26:31.859 DEBUG: OnBeforeClose() hwnd=3409722
+- 09:26:31.859 DEBUG: RemoveBrowserWindow(): hwnd = 3409722
+- 09:26:31.859 DEBUG: GetBrowserWindow(): not found, hwnd = 3409722
+- 09:26:31.859 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:26:31.859 DEBUG: Calling CefQuitMessageLoop()
+- 09:26:31.906 INFO: Ended application
+- 09:26:31.906 INFO: --------------------------------------------------------
+- 09:26:45.000 INFO: --------------------------------------------------------
+- 09:26:45.000 INFO: Started application
+- 09:26:45.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:26:45.000 INFO: Log level = DEBUG4
+- 09:26:45.000 INFO: Starting Mongoose 3.9c web server
+- 09:26:45.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\
+- 09:26:45.000 INFO: Index files: index.html,index.php
+- 09:26:45.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:26:45.000 INFO: CGI pattern: **.php$
+- 09:26:45.000 INFO: Hide files patterns: 
+- 09:26:45.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:26:45.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:26:45.016 INFO: Web server url: http://127.0.0.1:8000/
+- 09:26:45.016 INFO: remote_debugging_port = 65319
+- 09:26:45.016 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=65319
+- 09:26:45.453 DEBUG: App::OnContextInitialized()
+- 09:26:45.453 DEBUG: Window max width/height = 1840/992
+- 09:26:45.453 DEBUG: GetBrowserWindow(): not found, hwnd = 2230132
+- 09:26:45.453 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:26:45.453 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:26:45.453 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:26:45.453 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:26:45.453 DEBUG: StoreBrowserWindow(): hwnd = 2230132
+- 09:26:45.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=9226C698616DCFD7E9FA660FB5F5B078 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:26:45.484 DEBUG: ClientHandler::OnAfterCreated()
+- 09:26:45.484 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:26:45.484 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:26:45.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=2BF4B68E2BB7A6CC59B892AEBF2EC6D8 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=2BF4B68E2BB7A6CC59B892AEBF2EC6D8 --renderer-client-id=3 --mojo-platform-channel-handle=2376 /prefetch:1
+[1009/092645.817:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:26:45.031 DEBUG: OnBrowserCreated()
+- 09:26:46.563 INFO: GET 200 /
+- 09:26:46.594 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:26:51.281 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/
+- 09:26:51.438 INFO: GET 200 /public/
+- 09:26:51.453 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/
+- 09:26:57.422 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/
+- 09:26:57.578 INFO: GET 200 /public/
+- 09:26:57.594 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/
+- 09:28:48.766 DEBUG: WM_DESTROY
+- 09:28:48.766 DEBUG: RemoveBrowserWindow(): hwnd = 2230132
+- 09:28:48.766 INFO: Stopping Mongoose web server
+- 09:28:48.766 DEBUG: Mongoose webserver stopped immediately
+- 09:28:48.766 DEBUG: OnBeforeClose() hwnd=2557324
+- 09:28:48.766 DEBUG: RemoveBrowserWindow(): hwnd = 2557324
+- 09:28:48.766 DEBUG: GetBrowserWindow(): not found, hwnd = 2557324
+- 09:28:48.766 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:28:48.766 DEBUG: Calling CefQuitMessageLoop()
+- 09:28:48.797 INFO: Ended application
+- 09:28:48.797 INFO: --------------------------------------------------------
+- 09:28:59.000 INFO: --------------------------------------------------------
+- 09:28:59.000 INFO: Started application
+- 09:28:59.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:28:59.000 INFO: Log level = DEBUG4
+- 09:28:59.000 INFO: Starting Mongoose 3.9c web server
+- 09:28:59.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www
+- 09:28:59.000 INFO: Index files: index.html,index.php
+- 09:28:59.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:28:59.000 INFO: CGI pattern: **.php$
+- 09:28:59.000 INFO: Hide files patterns: 
+- 09:28:59.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:28:59.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:28:59.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:28:59.000 INFO: remote_debugging_port = 49490
+- 09:28:59.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=49490
+- 09:28:59.422 DEBUG: App::OnContextInitialized()
+- 09:28:59.422 DEBUG: Window max width/height = 1840/992
+- 09:28:59.422 DEBUG: GetBrowserWindow(): not found, hwnd = 2229112
+- 09:28:59.422 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:28:59.422 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:28:59.422 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:28:59.422 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:28:59.422 DEBUG: StoreBrowserWindow(): hwnd = 2229112
+- 09:28:59.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=149B2E193C1DDA097FB7E6E614B93838 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:28:59.453 DEBUG: ClientHandler::OnAfterCreated()
+- 09:28:59.453 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:28:59.453 DEBUG: OnLoadingStateChange: loading=1, url=
+[1009/092859.829:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:28:59.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=6232B39802FBE2FBCC8FE0B5F61E5904 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=6232B39802FBE2FBCC8FE0B5F61E5904 --renderer-client-id=3 --mojo-platform-channel-handle=2332 /prefetch:1
+- 09:28:59.016 DEBUG: OnBrowserCreated()
+- 09:29:00.625 INFO: GET 200 /
+- 09:29:01.641 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:29:03.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/
+- 09:29:04.734 INFO: GET 200 /public/
+- 09:29:04.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/
+- 09:29:06.766 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/
+- 09:29:06.766 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:29:13.641 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/
+- 09:29:13.641 INFO: GET 200 /bootstrap/
+- 09:29:14.641 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/bootstrap/
+- 09:29:16.219 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/bootstrap/
+- 09:29:16.234 INFO: GET 200 /
+- 09:29:16.234 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:29:20.062 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/
+- 09:29:20.234 INFO: GET 200 /public/
+- 09:29:20.234 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/
+- 09:29:24.047 DEBUG: WM_DESTROY
+- 09:29:24.047 DEBUG: RemoveBrowserWindow(): hwnd = 2229112
+- 09:29:24.047 INFO: Stopping Mongoose web server
+- 09:29:24.047 DEBUG: Mongoose webserver stopped immediately
+- 09:29:24.047 DEBUG: OnBeforeClose() hwnd=3671468
+- 09:29:24.047 DEBUG: RemoveBrowserWindow(): hwnd = 3671468
+- 09:29:24.047 DEBUG: GetBrowserWindow(): not found, hwnd = 3671468
+- 09:29:24.047 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:29:24.047 DEBUG: Calling CefQuitMessageLoop()
+- 09:29:24.078 INFO: Ended application
+- 09:29:24.078 INFO: --------------------------------------------------------
+- 09:31:55.000 INFO: --------------------------------------------------------
+- 09:31:55.000 INFO: Started application
+- 09:31:55.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:31:55.000 INFO: Log level = DEBUG4
+- 09:31:55.000 INFO: Starting Mongoose 3.9c web server
+- 09:31:55.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www
+- 09:31:55.000 INFO: Index files: index.html,index.php
+- 09:31:55.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:31:55.000 INFO: CGI pattern: **.php$
+- 09:31:55.000 INFO: Hide files patterns: 
+- 09:31:55.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:31:55.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:31:55.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:31:55.000 INFO: remote_debugging_port = 62838
+- 09:31:55.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=62838
+- 09:31:56.422 DEBUG: App::OnContextInitialized()
+- 09:31:56.422 DEBUG: Window max width/height = 1840/992
+- 09:31:56.422 DEBUG: GetBrowserWindow(): not found, hwnd = 3999462
+- 09:31:56.422 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:31:56.422 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:31:56.422 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:31:56.422 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:31:56.422 DEBUG: StoreBrowserWindow(): hwnd = 3999462
+- 09:31:56.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=FB227B818B47B43E4FF2E276AF3EDE97 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:31:56.453 DEBUG: ClientHandler::OnAfterCreated()
+- 09:31:56.453 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:31:56.469 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:31:56.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=684EDAC16C2A189E4EFD5B7E48C4E839 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=684EDAC16C2A189E4EFD5B7E48C4E839 --renderer-client-id=3 --mojo-platform-channel-handle=2372 /prefetch:1
+[1009/093156.372:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:31:56.031 DEBUG: OnBrowserCreated()
+- 09:31:57.547 INFO: GET 200 /
+- 09:31:57.563 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:31:59.047 DEBUG: WM_DESTROY
+- 09:31:59.047 DEBUG: RemoveBrowserWindow(): hwnd = 3999462
+- 09:31:59.047 INFO: Stopping Mongoose web server
+- 09:31:59.047 DEBUG: Mongoose webserver stopped immediately
+- 09:31:59.047 DEBUG: OnBeforeClose() hwnd=3868298
+- 09:31:59.047 DEBUG: RemoveBrowserWindow(): hwnd = 3868298
+- 09:31:59.047 DEBUG: GetBrowserWindow(): not found, hwnd = 3868298
+- 09:31:59.047 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:31:59.047 DEBUG: Calling CefQuitMessageLoop()
+- 09:31:59.078 INFO: Ended application
+- 09:31:59.078 INFO: --------------------------------------------------------
+- 09:32:06.015 INFO: --------------------------------------------------------
+- 09:32:06.015 INFO: Started application
+- 09:32:06.015 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:32:06.015 INFO: Log level = DEBUG4
+- 09:32:06.015 INFO: Starting Mongoose 3.9c web server
+- 09:32:06.015 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www
+- 09:32:06.015 INFO: Index files: index.html,index.php
+- 09:32:06.015 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:32:06.015 INFO: CGI pattern: **.php$
+- 09:32:06.015 INFO: Hide files patterns: 
+- 09:32:06.015 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:32:06.015 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:32:06.015 INFO: Web server url: http://127.0.0.1:8000/
+- 09:32:06.015 INFO: remote_debugging_port = 50433
+- 09:32:06.015 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=50433
+- 09:32:06.437 DEBUG: App::OnContextInitialized()
+- 09:32:06.437 DEBUG: Window max width/height = 1840/992
+- 09:32:06.437 DEBUG: GetBrowserWindow(): not found, hwnd = 3016076
+- 09:32:06.437 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:32:06.437 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:32:06.437 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:32:06.437 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:32:06.437 DEBUG: StoreBrowserWindow(): hwnd = 3016076
+- 09:32:06.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=B07251EA024778DA7C469115E891B49E --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:32:06.453 DEBUG: ClientHandler::OnAfterCreated()
+- 09:32:06.453 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:32:06.468 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:32:06.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=FCA5EAEDD59A0D5442E19749A3186E5D --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=FCA5EAEDD59A0D5442E19749A3186E5D --renderer-client-id=3 --mojo-platform-channel-handle=2360 /prefetch:1
+[1009/093206.982:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:32:07.031 DEBUG: OnBrowserCreated()
+- 09:32:08.875 INFO: GET 200 /
+- 09:32:08.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:32:10.078 DEBUG: WM_DESTROY
+- 09:32:10.078 DEBUG: RemoveBrowserWindow(): hwnd = 3016076
+- 09:32:10.078 INFO: Stopping Mongoose web server
+- 09:32:10.078 DEBUG: Mongoose webserver stopped immediately
+- 09:32:10.078 DEBUG: OnBeforeClose() hwnd=1967438
+- 09:32:10.078 DEBUG: RemoveBrowserWindow(): hwnd = 1967438
+- 09:32:10.078 DEBUG: GetBrowserWindow(): not found, hwnd = 1967438
+- 09:32:10.078 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:32:10.078 DEBUG: Calling CefQuitMessageLoop()
+- 09:32:10.109 INFO: Ended application
+- 09:32:10.109 INFO: --------------------------------------------------------
+- 09:33:30.047 INFO: --------------------------------------------------------
+- 09:33:30.047 INFO: Started application
+- 09:33:30.047 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:33:30.047 INFO: Log level = DEBUG4
+- 09:33:30.063 INFO: Starting Mongoose 3.9c web server
+- 09:33:30.063 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:33:30.063 INFO: Index files: index.html,index.php
+- 09:33:30.063 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:33:30.063 INFO: CGI pattern: **.php$
+- 09:33:30.063 INFO: Hide files patterns: 
+- 09:33:30.063 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:33:30.063 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:33:30.063 INFO: Web server url: http://127.0.0.1:8000/
+- 09:33:30.063 INFO: remote_debugging_port = 59339
+- 09:33:30.063 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=59339
+- 09:33:31.485 DEBUG: App::OnContextInitialized()
+- 09:33:31.500 DEBUG: Window max width/height = 1840/992
+- 09:33:31.500 DEBUG: GetBrowserWindow(): not found, hwnd = 3147148
+- 09:33:31.500 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:33:31.500 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:33:31.500 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:33:31.500 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:33:31.500 DEBUG: StoreBrowserWindow(): hwnd = 3147148
+- 09:33:31.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=C6B6A955C7B13C48F04F182F64C80DF7 --mojo-platform-channel-handle=1944 /prefetch:2
+- 09:33:31.516 DEBUG: ClientHandler::OnAfterCreated()
+- 09:33:31.516 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:33:31.531 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:33:31.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=87694B34D5E63E8B825D66FB7D3CC4C6 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=87694B34D5E63E8B825D66FB7D3CC4C6 --renderer-client-id=3 --mojo-platform-channel-handle=2404 /prefetch:1
+[1009/093331.054:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:33:31.016 DEBUG: OnBrowserCreated()
+- 09:33:32.750 INFO: GET 200 /
+- 09:33:32.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:33:38.531 DEBUG: WM_DESTROY
+- 09:33:38.531 DEBUG: RemoveBrowserWindow(): hwnd = 3147148
+- 09:33:38.531 INFO: Stopping Mongoose web server
+- 09:33:38.531 DEBUG: Mongoose webserver stopped immediately
+- 09:33:38.531 DEBUG: OnBeforeClose() hwnd=8717172
+- 09:33:38.531 DEBUG: RemoveBrowserWindow(): hwnd = 8717172
+- 09:33:38.547 DEBUG: GetBrowserWindow(): not found, hwnd = 8717172
+- 09:33:38.547 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:33:38.547 DEBUG: Calling CefQuitMessageLoop()
+- 09:33:38.000 DEBUG: OnBrowserDestroyed()
+- 09:33:38.563 INFO: Ended application
+- 09:33:38.563 INFO: --------------------------------------------------------
+- 09:33:54.046 INFO: --------------------------------------------------------
+- 09:33:54.046 INFO: Started application
+- 09:33:54.046 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:33:54.046 INFO: Log level = DEBUG4
+- 09:33:54.046 INFO: Starting Mongoose 3.9c web server
+- 09:33:54.062 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:33:54.062 INFO: Index files: index.html,index.php
+- 09:33:54.062 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:33:54.062 INFO: CGI pattern: **.php$
+- 09:33:54.062 INFO: Hide files patterns: 
+- 09:33:54.062 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:33:54.062 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:33:54.062 INFO: Web server url: http://127.0.0.1:49695/
+- 09:33:54.062 INFO: remote_debugging_port = 60070
+- 09:33:54.062 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=60070
+- 09:33:55.484 DEBUG: App::OnContextInitialized()
+- 09:33:55.484 DEBUG: Window max width/height = 1840/992
+- 09:33:55.500 DEBUG: GetBrowserWindow(): not found, hwnd = 3278224
+- 09:33:55.500 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:33:55.500 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:33:55.500 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:33:55.500 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:33:55.500 DEBUG: StoreBrowserWindow(): hwnd = 3278224
+- 09:33:55.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=27B327D7CA7DA514F4EED224377B6E2B --mojo-platform-channel-handle=1944 /prefetch:2
+- 09:33:55.515 DEBUG: ClientHandler::OnAfterCreated()
+- 09:33:55.515 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:33:55.531 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:33:55.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=3A37AA3F72EE5A4B099F4E136EBC448E --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=3A37AA3F72EE5A4B099F4E136EBC448E --renderer-client-id=3 --mojo-platform-channel-handle=2400 /prefetch:1
+[1009/093355.288:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:33:55.016 DEBUG: OnBrowserCreated()
+- 09:33:56.718 INFO: GET 200 /
+- 09:33:56.734 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:49695/
+- 09:34:15.031 INFO: --------------------------------------------------------
+- 09:34:15.031 INFO: Started application
+- 09:34:15.046 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:34:15.046 INFO: Log level = DEBUG4
+- 09:34:15.046 INFO: Starting Mongoose 3.9c web server
+- 09:34:15.046 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:34:15.046 INFO: Index files: index.html,index.php
+- 09:34:15.046 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:34:15.046 INFO: CGI pattern: **.php$
+- 09:34:15.046 INFO: Hide files patterns: 
+- 09:34:15.046 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:34:15.046 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:34:15.046 INFO: Web server url: http://127.0.0.1:49715/
+- 09:34:15.046 INFO: remote_debugging_port = 50323
+- 09:34:15.046 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=50323
+- 09:34:15.468 DEBUG: App::OnContextInitialized()
+- 09:34:15.468 DEBUG: Window max width/height = 1840/992
+- 09:34:15.468 DEBUG: GetBrowserWindow(): not found, hwnd = 4260768
+- 09:34:15.468 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:34:15.468 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:34:15.468 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:34:15.468 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:34:15.468 DEBUG: StoreBrowserWindow(): hwnd = 4260768
+- 09:34:15.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=89C2C338C750E5B937A872F917551B10 --mojo-platform-channel-handle=1944 /prefetch:2
+- 09:34:15.500 DEBUG: ClientHandler::OnAfterCreated()
+- 09:34:15.500 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:34:15.515 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:34:15.016 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=85C6CCA5595DCDDF332EE436075F1373 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=85C6CCA5595DCDDF332EE436075F1373 --renderer-client-id=3 --mojo-platform-channel-handle=2408 /prefetch:1
+[1009/093415.646:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:34:15.031 DEBUG: OnBrowserCreated()
+- 09:34:17.062 INFO: GET 200 /
+- 09:34:17.062 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:49715/
+- 09:34:18.265 DEBUG: WM_DESTROY
+- 09:34:18.265 DEBUG: RemoveBrowserWindow(): hwnd = 4260768
+- 09:34:18.265 INFO: Stopping Mongoose web server
+- 09:34:18.265 DEBUG: Mongoose webserver stopped immediately
+- 09:34:18.265 DEBUG: OnBeforeClose() hwnd=2557344
+- 09:34:18.265 DEBUG: RemoveBrowserWindow(): hwnd = 2557344
+- 09:34:18.265 DEBUG: GetBrowserWindow(): not found, hwnd = 2557344
+- 09:34:18.265 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:34:18.265 DEBUG: Calling CefQuitMessageLoop()
+- 09:34:18.750 DEBUG: OnBrowserDestroyed()
+- 09:34:18.296 INFO: Ended application
+- 09:34:18.296 INFO: --------------------------------------------------------
+- 09:34:46.047 INFO: --------------------------------------------------------
+- 09:34:46.047 INFO: Started application
+- 09:34:46.047 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:34:46.047 INFO: Log level = DEBUG4
+- 09:34:46.047 INFO: Starting Mongoose 3.9c web server
+- 09:34:46.047 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:34:46.047 INFO: Index files: index.html,index.php
+- 09:34:46.047 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:34:46.047 INFO: CGI pattern: **.php$
+- 09:34:46.047 INFO: Hide files patterns: 
+- 09:34:46.047 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:34:46.062 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:34:46.062 INFO: Web server url: http://127.0.0.1:49734/
+- 09:34:46.062 INFO: remote_debugging_port = 53923
+- 09:34:46.062 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=53923
+- 09:34:47.484 DEBUG: App::OnContextInitialized()
+- 09:34:47.484 DEBUG: Window max width/height = 1840/992
+- 09:34:47.484 DEBUG: GetBrowserWindow(): not found, hwnd = 984106
+- 09:34:47.484 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:34:47.484 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:34:47.484 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:34:47.484 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:34:47.484 DEBUG: StoreBrowserWindow(): hwnd = 984106
+- 09:34:47.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=23AF56FB435D841E8C4F1DD01FD7E9C2 --mojo-platform-channel-handle=1944 /prefetch:2
+- 09:34:47.516 DEBUG: ClientHandler::OnAfterCreated()
+- 09:34:47.516 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:34:47.531 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:34:47.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=D5211E54B0CA68DA88BC818E33B13DE9 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=D5211E54B0CA68DA88BC818E33B13DE9 --renderer-client-id=3 --mojo-platform-channel-handle=2404 /prefetch:1
+[1009/093447.390:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:34:47.031 DEBUG: OnBrowserCreated()
+- 09:34:48.750 INFO: GET 200 /
+- 09:34:48.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:49734/
+- 09:36:12.047 INFO: --------------------------------------------------------
+- 09:36:12.047 INFO: Started application
+- 09:36:12.047 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:36:12.047 INFO: Log level = DEBUG4
+- 09:36:12.047 INFO: Starting Mongoose 3.9c web server
+- 09:36:12.047 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:36:12.047 INFO: Index files: index.html,index.php
+- 09:36:12.047 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:36:12.047 INFO: CGI pattern: **.php$
+- 09:36:12.047 INFO: Hide files patterns: 
+- 09:36:12.047 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:36:12.047 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:36:12.047 INFO: Web server url: http://127.0.0.1:49783/
+- 09:36:12.047 INFO: remote_debugging_port = 64506
+- 09:36:12.047 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=64506
+- 09:36:12.468 DEBUG: App::OnContextInitialized()
+- 09:36:12.468 DEBUG: Window max width/height = 1840/992
+- 09:36:12.468 DEBUG: GetBrowserWindow(): not found, hwnd = 1181228
+- 09:36:12.468 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:36:12.468 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:36:12.468 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:36:12.468 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:36:12.468 DEBUG: StoreBrowserWindow(): hwnd = 1181228
+- 09:36:12.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=11287F39F0B4FB6B442E542747C8B227 --mojo-platform-channel-handle=1944 /prefetch:2
+- 09:36:12.500 DEBUG: ClientHandler::OnAfterCreated()
+- 09:36:12.500 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:36:12.515 DEBUG: OnLoadingStateChange: loading=1, url=
+[1009/093612.968:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:36:12.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=FB67513D4AD047A92A702E7BCB743379 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=FB67513D4AD047A92A702E7BCB743379 --renderer-client-id=3 --mojo-platform-channel-handle=2384 /prefetch:1
+- 09:36:12.032 DEBUG: OnBrowserCreated()
+- 09:36:14.687 INFO: GET 200 /
+- 09:36:14.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:49783/
+- 09:41:21.047 INFO: --------------------------------------------------------
+- 09:41:21.047 INFO: Started application
+- 09:41:21.047 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:41:21.047 INFO: Log level = DEBUG4
+- 09:41:21.047 INFO: Starting Mongoose 3.9c web server
+- 09:41:21.047 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:41:21.047 INFO: Index files: index.html,index.php
+- 09:41:21.047 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:41:21.047 INFO: CGI pattern: **.php$
+- 09:41:21.047 INFO: Hide files patterns: 
+- 09:41:21.047 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:41:22.062 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:41:22.078 INFO: Web server url: http://127.0.0.1:50000/
+- 09:41:22.078 INFO: remote_debugging_port = 51593
+- 09:41:22.078 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=51593
+- 09:41:22.500 DEBUG: App::OnContextInitialized()
+- 09:41:22.500 DEBUG: Window max width/height = 1840/992
+- 09:41:22.500 DEBUG: GetBrowserWindow(): not found, hwnd = 918192
+- 09:41:22.500 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:41:22.500 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:41:22.500 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:41:22.500 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:41:22.500 DEBUG: StoreBrowserWindow(): hwnd = 918192
+- 09:41:22.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=A33D2176411F4EF957C15A3B076C87E7 --mojo-platform-channel-handle=1944 /prefetch:2
+- 09:41:22.531 DEBUG: ClientHandler::OnAfterCreated()
+- 09:41:22.531 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:41:22.531 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:41:22.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=583E9BA18661A14D01FDD22E1E868ACE --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=583E9BA18661A14D01FDD22E1E868ACE --renderer-client-id=3 --mojo-platform-channel-handle=2404 /prefetch:1
+[1009/094122.497:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:41:22.031 DEBUG: OnBrowserCreated()
+- 09:41:23.828 INFO: GET 200 /css/bootstrap.css
+- 09:41:23.828 INFO: GET 200 /css/fontawesome-all.min.css
+- 09:41:23.828 INFO: GET 200 /css/styles.css
+- 09:41:23.296 DEBUG: OnContextCreated()
+- 09:41:23.843 INFO: GET 200 /
+- 09:41:23.843 INFO: GET 200 /img/archive.png
+- 09:41:23.875 INFO: GET 200 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 09:41:23.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:50000/
+- 09:44:10.015 INFO: --------------------------------------------------------
+- 09:44:10.015 INFO: Started application
+- 09:44:10.015 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:44:10.015 INFO: Log level = DEBUG4
+- 09:44:10.015 INFO: Starting Mongoose 3.9c web server
+- 09:44:10.015 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:44:10.015 INFO: Index files: index.html,index.php
+- 09:44:10.015 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:44:10.015 INFO: CGI pattern: **.php$
+- 09:44:10.015 INFO: Hide files patterns: 
+- 09:44:10.015 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:44:10.015 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:44:10.015 INFO: Web server url: http://127.0.0.1:8000/
+- 09:44:10.015 INFO: remote_debugging_port = 61773
+- 09:44:10.015 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=61773
+- 09:44:10.390 DEBUG: App::OnContextInitialized()
+- 09:44:10.390 DEBUG: Window max width/height = 1840/992
+- 09:44:10.390 DEBUG: GetBrowserWindow(): not found, hwnd = 2164560
+- 09:44:10.390 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:44:10.390 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:44:10.390 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:44:10.390 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:44:10.390 DEBUG: StoreBrowserWindow(): hwnd = 2164560
+- 09:44:10.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=484BAE596B1819FE9102EE594510103C --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:44:10.437 DEBUG: ClientHandler::OnAfterCreated()
+- 09:44:10.437 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:44:10.437 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:44:10.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=BEE75E545B606CFF0A5F2CD080212341 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=BEE75E545B606CFF0A5F2CD080212341 --renderer-client-id=3 --mojo-platform-channel-handle=2380 /prefetch:1
+[1009/094410.487:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:44:10.031 DEBUG: OnBrowserCreated()
+- 09:44:11.703 INFO: GET 200 /css/bootstrap.css
+- 09:44:11.703 INFO: GET 200 /css/styles.css
+- 09:44:11.703 INFO: GET 200 /css/fontawesome-all.min.css
+- 09:44:11.250 DEBUG: OnContextCreated()
+- 09:44:11.719 INFO: GET 200 /img/archive.png
+- 09:44:11.734 INFO: GET 200 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 09:44:11.765 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:44:15.484 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/
+- 09:44:15.797 INFO: POST 302 /login
+- 09:44:16.547 DEBUG: OnContextCreated()
+- 09:44:16.000 INFO: GET 200 /document
+- 09:44:16.000 INFO: GET 200 /css/daterangepicker.min.css
+- 09:44:16.000 INFO: GET 200 /css/treeview.css
+- 09:44:16.000 INFO: GET 200 /css/select2.min.css
+- 09:44:16.000 INFO: GET 200 /js/jquery-3.2.1.min.js
+- 09:44:16.000 INFO: GET 200 /css/jqwidgets/styles/jqx.base.css
+- 09:44:16.015 INFO: GET 200 /js/jqwidgets/jqxcore.js
+- 09:44:16.031 INFO: GET 200 /js/jqwidgets/jqxbuttons.js
+- 09:44:16.031 INFO: GET 200 /js/jqwidgets/jqxscrollbar.js
+- 09:44:16.031 INFO: GET 200 /js/jqwidgets/jqxpanel.js
+- 09:44:16.047 INFO: GET 200 /js/jqwidgets/jqxtree.js
+- 09:44:16.078 INFO: GET 200 /js/jqwidgets/jqxexpander.js
+- 09:44:16.078 INFO: GET 200 /js/moment.min.js
+- 09:44:16.078 INFO: GET 200 /js/bootstrap.min.js
+- 09:44:16.078 INFO: GET 200 /js/jquery.daterangepicker.min.js
+- 09:44:16.125 INFO: GET 200 /js/operation.js
+- 09:44:16.125 INFO: GET 200 /js/jquery.PrintArea.js
+- 09:44:16.125 INFO: GET 200 /js/sweetalert2.all.min.js
+- 09:44:16.125 INFO: GET 200 /js/globalebackend.js
+- 09:44:16.125 INFO: GET 200 /js/select2.min.js
+- 09:44:16.328 INFO: GET 200 /webfonts/fa-solid-900.woff2
+- 09:44:16.453 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000//document
+- 09:44:16.656 INFO: POST 200 /document/serial
+- 09:44:16.687 INFO: GET 200 /organization/tree
+- 09:44:18.234 DEBUG: WM_DESTROY
+- 09:44:18.234 DEBUG: RemoveBrowserWindow(): hwnd = 2164560
+- 09:44:18.234 INFO: Stopping Mongoose web server
+- 09:44:18.234 DEBUG: Mongoose webserver stopped immediately
+- 09:44:18.250 DEBUG: OnBeforeClose() hwnd=1902122
+- 09:44:18.250 DEBUG: RemoveBrowserWindow(): hwnd = 1902122
+- 09:44:18.250 DEBUG: GetBrowserWindow(): not found, hwnd = 1902122
+- 09:44:18.250 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:44:18.250 DEBUG: Calling CefQuitMessageLoop()
+- 09:44:18.344 INFO: Ended application
+- 09:44:18.344 INFO: --------------------------------------------------------
+- 09:44:19.000 INFO: --------------------------------------------------------
+- 09:44:19.000 INFO: Started application
+- 09:44:19.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:44:19.000 INFO: Log level = DEBUG4
+- 09:44:19.000 INFO: Starting Mongoose 3.9c web server
+- 09:44:19.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:44:19.000 INFO: Index files: index.html,index.php
+- 09:44:19.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:44:19.000 INFO: CGI pattern: **.php$
+- 09:44:19.000 INFO: Hide files patterns: 
+- 09:44:19.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:44:19.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:44:19.016 INFO: Web server url: http://127.0.0.1:8000/
+- 09:44:19.016 INFO: remote_debugging_port = 61446
+- 09:44:19.016 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=61446
+- 09:44:19.407 DEBUG: App::OnContextInitialized()
+- 09:44:19.407 DEBUG: Window max width/height = 1840/992
+- 09:44:19.407 DEBUG: GetBrowserWindow(): not found, hwnd = 5113574
+- 09:44:19.407 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:44:19.407 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:44:19.407 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:44:19.407 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:44:19.407 DEBUG: StoreBrowserWindow(): hwnd = 5113574
+- 09:44:19.016 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=3C678D0F6AB870B21E1F487D22C6A9C5 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:44:19.438 DEBUG: ClientHandler::OnAfterCreated()
+- 09:44:19.438 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:44:19.438 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:44:19.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=6BC092CBE26FE92CE4B6705185AC5136 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=6BC092CBE26FE92CE4B6705185AC5136 --renderer-client-id=3 --mojo-platform-channel-handle=2328 /prefetch:1
+[1009/094419.806:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:44:19.047 DEBUG: OnBrowserCreated()
+- 09:44:21.750 INFO: GET 302 /
+- 09:44:21.500 DEBUG: OnContextCreated()
+- 09:44:21.969 INFO: GET 200 /document
+- 09:44:21.188 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/document
+- 09:44:21.391 INFO: POST 200 /document/serial
+- 09:44:21.422 INFO: GET 200 /organization/tree
+- 09:44:22.094 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/document
+- 09:44:22.297 INFO: GET 302 /logout
+- 09:44:22.016 DEBUG: OnContextCreated()
+- 09:44:22.485 INFO: GET 200 /
+- 09:44:22.500 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:44:28.641 DEBUG: WM_DESTROY
+- 09:44:28.641 DEBUG: RemoveBrowserWindow(): hwnd = 5113574
+- 09:44:28.641 INFO: Stopping Mongoose web server
+- 09:44:28.641 DEBUG: Mongoose webserver stopped immediately
+- 09:44:28.641 DEBUG: OnBeforeClose() hwnd=3016322
+- 09:44:28.641 DEBUG: RemoveBrowserWindow(): hwnd = 3016322
+- 09:44:28.641 DEBUG: GetBrowserWindow(): not found, hwnd = 3016322
+- 09:44:28.641 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:44:28.641 DEBUG: Calling CefQuitMessageLoop()
+- 09:44:29.735 INFO: Ended application
+- 09:44:29.735 INFO: --------------------------------------------------------
+- 09:45:30.000 INFO: --------------------------------------------------------
+- 09:45:30.000 INFO: Started application
+- 09:45:30.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:45:30.000 INFO: Log level = DEBUG4
+- 09:45:30.000 INFO: Starting Mongoose 3.9c web server
+- 09:45:30.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:45:30.000 INFO: Index files: index.html,index.php
+- 09:45:30.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:45:30.000 INFO: CGI pattern: **.php$
+- 09:45:30.000 INFO: Hide files patterns: 
+- 09:45:30.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:45:30.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:45:30.016 INFO: Web server url: http://127.0.0.1:8000/
+- 09:45:30.016 INFO: remote_debugging_port = 50092
+- 09:45:30.016 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=50092
+- 09:45:30.407 DEBUG: App::OnContextInitialized()
+- 09:45:30.407 DEBUG: Window max width/height = 1840/992
+- 09:45:30.407 DEBUG: GetBrowserWindow(): not found, hwnd = 4916686
+- 09:45:30.407 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:45:30.407 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 09:45:30.407 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 09:45:30.407 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:45:30.407 DEBUG: StoreBrowserWindow(): hwnd = 4916686
+- 09:45:30.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=AA69E4F4B646F1F97EE050CC1B690CD2 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:45:30.438 DEBUG: ClientHandler::OnAfterCreated()
+- 09:45:30.438 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:45:30.438 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:45:30.016 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=852778919E662E8FEEF3B5FDA83A4F03 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=852778919E662E8FEEF3B5FDA83A4F03 --renderer-client-id=3 --mojo-platform-channel-handle=2372 /prefetch:1
+[1009/094530.802:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:45:30.032 DEBUG: OnBrowserCreated()
+- 09:45:32.703 INFO: GET 200 /
+- 09:45:32.250 DEBUG: OnContextCreated()
+- 09:45:32.766 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:45:34.938 DEBUG: WM_DESTROY
+- 09:45:34.938 DEBUG: RemoveBrowserWindow(): hwnd = 4916686
+- 09:45:34.938 INFO: Stopping Mongoose web server
+- 09:45:34.938 DEBUG: Mongoose webserver stopped immediately
+- 09:45:34.938 DEBUG: OnBeforeClose() hwnd=3343116
+- 09:45:34.938 DEBUG: RemoveBrowserWindow(): hwnd = 3343116
+- 09:45:34.938 DEBUG: GetBrowserWindow(): not found, hwnd = 3343116
+- 09:45:34.938 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:45:34.938 DEBUG: Calling CefQuitMessageLoop()
+- 09:45:34.063 INFO: Ended application
+- 09:45:34.063 INFO: --------------------------------------------------------
+- 09:45:54.000 INFO: --------------------------------------------------------
+- 09:45:54.000 INFO: Started application
+- 09:45:54.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:45:54.000 INFO: Log level = DEBUG4
+- 09:45:54.000 INFO: Starting Mongoose 3.9c web server
+- 09:45:54.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:45:54.000 INFO: Index files: index.html,index.php
+- 09:45:54.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:45:54.000 INFO: CGI pattern: **.php$
+- 09:45:54.000 INFO: Hide files patterns: 
+- 09:45:54.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:45:54.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:45:54.000 INFO: Web server url: http://127.0.0.1:8000/
+- 09:45:54.000 INFO: remote_debugging_port = 58183
+- 09:45:54.000 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=58183
+- 09:45:54.422 DEBUG: App::OnContextInitialized()
+- 09:45:54.422 DEBUG: Window max width/height = 1840/992
+- 09:45:54.422 DEBUG: GetBrowserWindow(): not found, hwnd = 2229972
+- 09:45:54.422 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:45:54.438 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:45:54.438 DEBUG: StoreBrowserWindow(): hwnd = 2229972
+- 09:45:54.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=B7D72B394BE44E5501029FA2D7C50494 --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:45:54.469 DEBUG: ClientHandler::OnAfterCreated()
+- 09:45:54.469 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:45:54.469 DEBUG: OnLoadingStateChange: loading=1, url=
+[1009/094554.947:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:45:54.000 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=2CF662A1A993BC4384E9911C025FC566 --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=2CF662A1A993BC4384E9911C025FC566 --renderer-client-id=3 --mojo-platform-channel-handle=2372 /prefetch:1
+- 09:45:54.031 DEBUG: OnBrowserCreated()
+- 09:45:56.750 INFO: GET 200 /
+- 09:45:56.265 DEBUG: OnContextCreated()
+- 09:45:56.813 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:46:00.594 DEBUG: WM_DESTROY
+- 09:46:00.594 DEBUG: RemoveBrowserWindow(): hwnd = 2229972
+- 09:46:00.594 INFO: Stopping Mongoose web server
+- 09:46:00.594 DEBUG: Mongoose webserver stopped immediately
+- 09:46:00.594 DEBUG: OnBeforeClose() hwnd=3867712
+- 09:46:00.594 DEBUG: RemoveBrowserWindow(): hwnd = 3867712
+- 09:46:00.594 DEBUG: GetBrowserWindow(): not found, hwnd = 3867712
+- 09:46:00.594 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:46:00.594 DEBUG: Calling CefQuitMessageLoop()
+- 09:46:00.703 INFO: Ended application
+- 09:46:00.703 INFO: --------------------------------------------------------
+- 09:46:02.000 INFO: --------------------------------------------------------
+- 09:46:02.000 INFO: Started application
+- 09:46:02.000 INFO: Logging to: C:\Users\NY Spider\Desktop\archive\debug.log
+- 09:46:02.000 INFO: Log level = DEBUG4
+- 09:46:02.000 INFO: Starting Mongoose 3.9c web server
+- 09:46:02.000 INFO: WWW directory: C:\Users\NY Spider\Desktop\archive\www\public
+- 09:46:02.000 INFO: Index files: index.html,index.php
+- 09:46:02.000 INFO: CGI interpreter: C:\Users\NY Spider\Desktop\archive\php\php-cgi.exe
+- 09:46:02.000 INFO: CGI pattern: **.php$
+- 09:46:02.000 INFO: Hide files patterns: 
+- 09:46:02.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\NYSPID~1\AppData\Local\Temp\
+- 09:46:02.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:46:02.015 INFO: Web server url: http://127.0.0.1:8000/
+- 09:46:02.015 INFO: remote_debugging_port = 63474
+- 09:46:02.015 DEBUG: Command line string for the browser process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --remote-debugging-port=63474
+- 09:46:02.437 DEBUG: App::OnContextInitialized()
+- 09:46:02.437 DEBUG: Window max width/height = 1840/992
+- 09:46:02.437 DEBUG: GetBrowserWindow(): not found, hwnd = 4130644
+- 09:46:02.437 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:46:02.437 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:46:02.437 DEBUG: StoreBrowserWindow(): hwnd = 4130644
+- 09:46:02.000 DEBUG: Command line string for the gpu-process process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x6719 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=15.200.1062.1004 --gpu-driver-date=8-3-2015 --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --service-request-channel-token=19C3051A365BDF3DBEBE2EA8D8BC0A4A --mojo-platform-channel-handle=1912 /prefetch:2
+- 09:46:02.468 DEBUG: ClientHandler::OnAfterCreated()
+- 09:46:02.468 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:46:02.468 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:46:02.016 DEBUG: Command line string for the renderer process: "C:\Users\NY Spider\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=8D37AA8FF00464098CE348477E75E3FF --lang=en-US --lang=en-US --log-file="C:\Users\NY Spider\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=3 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=8D37AA8FF00464098CE348477E75E3FF --renderer-client-id=3 --mojo-platform-channel-handle=2376 /prefetch:1
+[1009/094602.743:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:46:02.031 DEBUG: OnBrowserCreated()
+- 09:46:03.734 INFO: GET 200 /
+- 09:46:03.266 DEBUG: OnContextCreated()
+- 09:46:04.796 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:46:06.093 DEBUG: WM_DESTROY
+- 09:46:06.093 DEBUG: RemoveBrowserWindow(): hwnd = 4130644
+- 09:46:06.093 INFO: Stopping Mongoose web server
+- 09:46:06.093 DEBUG: Mongoose webserver stopped immediately
+- 09:46:06.093 DEBUG: OnBeforeClose() hwnd=4523410
+- 09:46:06.093 DEBUG: RemoveBrowserWindow(): hwnd = 4523410
+- 09:46:06.093 DEBUG: GetBrowserWindow(): not found, hwnd = 4523410
+- 09:46:06.093 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:46:06.093 DEBUG: Calling CefQuitMessageLoop()
+- 09:46:06.187 INFO: Ended application
+- 09:46:06.187 INFO: --------------------------------------------------------

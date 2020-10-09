@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl">
+    <title>الوثائق
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/bootstrap.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/daterangepicker.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/styles.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/treeview.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/select2.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/jqwidgets/styles/jqx.base.css" type="text/css" />
+    <!-- JavaScripts -->
+    <script src="http://127.0.0.1:8000/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1:8000/js/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1:8000/js/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1:8000/js/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1:8000/js/jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1:8000/js/jqwidgets/jqxtree.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1:8000/js/jqwidgets/jqxexpander.js"></script>
+    <script src="http://127.0.0.1:8000/js/moment.min.js"></script>
+    <script src="http://127.0.0.1:8000/js/jquery.daterangepicker.min.js"></script>
+    <script src="http://127.0.0.1:8000/js/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:8000/js/operation.js"></script>
+    <script src="http://127.0.0.1:8000/js/jquery.PrintArea.js"></script>
+    <script src="http://127.0.0.1:8000/js/sweetalert2.all.min.js"></script>
+    <script src="http://127.0.0.1:8000/js/select2.min.js"></script>
+    <script src="http://127.0.0.1:8000/js/globalebackend.js"></script>
+    <!--  -->
+    </head>
+
+<body>
+    <div class="container-fluid projectContainer" dir="rtl">
+        <div class="row">
+            <div class="col-12 header">
+                <div class="row">
+                    <div class="col-10">
+                        <a href='\document'>
+                            <h3>برنامج الأرشيف</h3>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <select class='locale-changer'>
+                            <option value='en'>English</option>
+                            <option value='ar'>العربية</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 dashbordManu">
+                <ul>
+                    <li class="documentDashboard">
+                        <span>المكاتبات <i class="fas fa-caret-down"></i></span>
+                        <ul class="salesSubDash">
+                            <li><a href="\document/create">إضافة مكاتبة</a></li>
+                            <li><a href="\document">جميع المكاتبات</a></li>
+                        </ul>
+                    </li>
+                    <li class="organizationDashboard">
+                        <span>الجهات<i class="fas fa-caret-down"></i></span>
+                        <ul class="purchasesSubDash">
+                            <li><a href="\organization/create">إضافة جهة</a></li>
+                            <li><a href="\organization">جميع الجهات</a></li>
+                        </ul>
+                    </li>
+                    <li class="subjectDashboard">
+                        <span>الموضوعات <i class="fas fa-caret-down"></i></span>
+                        <ul class="stockSubDash">
+                            <li><a href="\subject/create">إضافة موضوع</a></li>
+                            <li><a href="\subject">جميع الموضوعات</a></li>
+                        </ul>
+                    </li>
+                    <li class="suitcaseDashboard">
+                        <span>الحقائب <i class="fas fa-caret-down"></i></span>
+                        <ul class="suitcaseDashboardSubDash">
+                            <li><a href="\suitcase/create">إضافة حقيبة</a></li>
+                            <li><a href="\suitcase">جميع الحقائب</a></li>
+                        </ul>
+                    </li>
+                    <li class="logout">
+                        <a href="http://127.0.0.1:8000/backup/view">
+                            <span style='color:#f44336; '><i class="fas fa-folder"></i> عمليات النسخه الاحتياطية</span>
+                        </a>
+                    </li>
+                    <li class="logout">
+                        <a href="http://127.0.0.1:8000/logout">
+                            <span><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-7 container" style='padding: 10pt;'>
+                                <input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"><form>
+    <div class="manipulation-bar col-12">
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="organization">الجهة</label>
+                        </div>
+                        <div class="row">
+                            <select class='form-control select organization' name='organization_id' required>
+                                                                <option value='11'>مصر</option>
+                                                                <option value='12'>تنزانيا</option>
+                                                                <option value='13'>القاعدة</option>
+                                                                <option value='14'>القاهرة</option>
+                                                                <option value='15'>الإسكندرية</option>
+                                                                <option value='16'>تنزانيا 1</option>
+                                                                <option value='17'>تنزانيا 2</option>
+                                                                <option value='18'>دار السلام</option>
+                                                                <option value='19'>القاعدة 1</option>
+                                                                <option value='20'>القاعدة 2</option>
+                                                                <option value='21'>الزيتون</option>
+                                                                <option value='22'>عين شمس</option>
+                                                                <option value='23'>ميامي</option>
+                                                                <option value='24'>المطرية</option>
+                                                                <option value='25'>بلد جوا دار السلام 1</option>
+                                                                <option value='26'>بلد جوا دار السلام 2</option>
+                                                                <option value='27'>test</option>
+                                                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="subject">الموضوع</label>
+                        </div>
+                        <div class="row">
+                            <select class='form-control select subject' name='subjects_id' required>
+                                                                <option value='1'>الموضوع الأول</option>
+                                                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="suitcase">الحقيبة</label>
+                        </div>
+                        <div class="row">
+                            <select class='form-control select suitcase' name='organization_id' required>
+                                                                <option value='1'>حقيبة</option>
+                                                                <option value='2'>الحقيبة الثانية</option>
+                                                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="description">التوصيف</label>
+                        </div>
+                        <div class="row">
+                            <textarea name='description' class='form-control description' required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="type">الحالة</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <label for="type">وارد</label><br>
+                                <input type="radio" id="import" class='type' name="type" value="وارد" checked>
+                            </div>
+                            <div class="col-3">
+                                <label for="type">صادر</label><br>
+                                <input type="radio" id="export" class='type' name="type" value="صادر">
+                            </div>
+                            <div class="form-group col">
+                                <label for="serial">رقم المسلسل</label>
+                                <input type="text" name='serial' class='form-control type_id' required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class='form-control btn btn-primary search'>بحث</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<table class="employersTable">
+    <thead>
+        <tr>
+            <td class="employersHeader" style="width:50px">المسلسل</td>
+            <td class="employersHeader" style="width:200px">الجهة</td>
+            <td class="employersHeader" style="width:200px">الموضوع</td>
+            <td class="employersHeader" style="width:100px">الحقيبة</td>
+            <td class="employersHeader" style="width:100px">التوصيف</td>
+            <td class="employersHeader" style="width:100px">الحالة</td>
+            <td class="employersHeader" style="width:100px">العمليات</td>
+        </tr>
+    </thead>
+    <tbody class='rows'>
+                        <tr>
+            <td>1</td>
+            <td>الزيتون</td>
+            <td>الموضوع الأول</td>
+            <td>حقيبة</td>
+            <td>4544</td>
+            <td>وارد</td>
+            <td>
+                <a href="\document/13/edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <form method='post' action='/document/13' id='deleteform13'><input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"> <input type="hidden" name="_method" value="DELETE"><i class="delete fa fa-trash" value="13"></i></form>
+            </td>
+        </tr>
+                <tr>
+            <td>2</td>
+            <td>عين شمس</td>
+            <td>الموضوع الأول</td>
+            <td>حقيبة</td>
+            <td>ننن</td>
+            <td>وارد</td>
+            <td>
+                <a href="\document/14/edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <form method='post' action='/document/14' id='deleteform14'><input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"> <input type="hidden" name="_method" value="DELETE"><i class="delete fa fa-trash" value="14"></i></form>
+            </td>
+        </tr>
+                <tr>
+            <td>1</td>
+            <td>المطرية</td>
+            <td>الموضوع الأول</td>
+            <td>حقيبة</td>
+            <td>كككك</td>
+            <td>صادر</td>
+            <td>
+                <a href="\document/15/edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <form method='post' action='/document/15' id='deleteform15'><input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"> <input type="hidden" name="_method" value="DELETE"><i class="delete fa fa-trash" value="15"></i></form>
+            </td>
+        </tr>
+                <tr>
+            <td>1</td>
+            <td>بلد جوا دار السلام 1</td>
+            <td>الموضوع الأول</td>
+            <td>حقيبة</td>
+            <td>555</td>
+            <td>وارد</td>
+            <td>
+                <a href="\document/16/edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <form method='post' action='/document/16' id='deleteform16'><input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"> <input type="hidden" name="_method" value="DELETE"><i class="delete fa fa-trash" value="16"></i></form>
+            </td>
+        </tr>
+                <tr>
+            <td>1</td>
+            <td>بلد جوا دار السلام 1</td>
+            <td>الموضوع الأول</td>
+            <td>حقيبة</td>
+            <td>عع</td>
+            <td>صادر</td>
+            <td>
+                <a href="\document/17/edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <form method='post' action='/document/17' id='deleteform17'><input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"> <input type="hidden" name="_method" value="DELETE"><i class="delete fa fa-trash" value="17"></i></form>
+            </td>
+        </tr>
+                <tr>
+            <td>2</td>
+            <td>تنزانيا 1</td>
+            <td>الموضوع الأول</td>
+            <td>حقيبة</td>
+            <td></td>
+            <td>وارد</td>
+            <td>
+                <a href="\document/18/edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <form method='post' action='/document/18' id='deleteform18'><input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"> <input type="hidden" name="_method" value="DELETE"><i class="delete fa fa-trash" value="18"></i></form>
+            </td>
+        </tr>
+                <tr>
+            <td>3</td>
+            <td>تنزانيا 1</td>
+            <td>الموضوع الأول</td>
+            <td>حقيبة</td>
+            <td></td>
+            <td>وارد</td>
+            <td>
+                <a href="\document/19/edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <form method='post' action='/document/19' id='deleteform19'><input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"> <input type="hidden" name="_method" value="DELETE"><i class="delete fa fa-trash" value="19"></i></form>
+            </td>
+        </tr>
+                <tr>
+            <td>2</td>
+            <td>تنزانيا 1</td>
+            <td>الموضوع الأول</td>
+            <td>حقيبة</td>
+            <td></td>
+            <td>صادر</td>
+            <td>
+                <a href="\document/20/edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <form method='post' action='/document/20' id='deleteform20'><input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"> <input type="hidden" name="_method" value="DELETE"><i class="delete fa fa-trash" value="20"></i></form>
+            </td>
+        </tr>
+                <tr>
+            <td>4</td>
+            <td>تنزانيا 1</td>
+            <td>الموضوع الأول</td>
+            <td>الحقيبة الثانية</td>
+            <td>bad</td>
+            <td>وارد</td>
+            <td>
+                <a href="\document/21/edit">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <form method='post' action='/document/21' id='deleteform21'><input type="hidden" name="_token" value="yiCrXPL2ikbXG4Nh9NmtV3kPeKDEueJ0MDzkybJl"> <input type="hidden" name="_method" value="DELETE"><i class="delete fa fa-trash" value="21"></i></form>
+            </td>
+        </tr>
+                    </tbody>
+
+</table>
+<div class="link-container">
+    
+</div>
+
+            </div>
+            <div class="col-3 treeview" style="display: none">
+                <div id='jqxExpander'>
+                    <div>
+                        الجهات                    </div>
+                    <div>
+                        <div style="border: none;" id='jqxTree'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footerapp">
+                <h6>جميع الحقوق محفوظة ل &copy; <script>
+                        let time = new Date().getFullYear();
+                        document.write(time + 1);
+                        document.write('-');
+                        document.write(time);
+                    </script>
+                </h6>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
