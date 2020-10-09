@@ -140,9 +140,9 @@ $(document).ready(function () {
             url: `/search/document`,
             method: "POST",
             data: {
-                organization: organization,
-                subject: subject,
-                suitcase: suitcase,
+                organization_id: organization,
+                subject_id: subject,
+                suitcase_id: suitcase,
                 description: description,
                 type: type,
                 type_id: type_id,

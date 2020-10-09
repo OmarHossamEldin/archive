@@ -1,10 +1,9 @@
 @extends('layout.app')
 @section('title')
-الوثائق
+    الوثائق
 @endsection
 @section('content')
-@csrf
-<form>
+    @csrf
     <div class="manipulation-bar col-12">
         <div class="row">
             <div class="col-4">
@@ -16,7 +15,7 @@
                         <div class="row">
                             <select class='form-control select organization' name='organization_id' required>
                                 @foreach($organizations as $organization)
-                                <option value='{{$organization->id}}'>{{ $organization->name }}</option>
+                                    <option value='{{$organization->id}}'>{{ $organization->name }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -30,7 +29,7 @@
                         <div class="row">
                             <select class='form-control select subject' name='subjects_id' required>
                                 @foreach($subjects as $subject)
-                                <option value='{{$subject->id}}'>{{ $subject->name }}</option>
+                                    <option value='{{$subject->id}}'>{{ $subject->name }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -44,9 +43,9 @@
                             <label for="suitcase">@lang('archive.global.suitcase')</label>
                         </div>
                         <div class="row">
-                            <select class='form-control select suitcase' name='organization_id' required>
+                            <select class='form-control select suitcase' name='suitcase_id' required>
                                 @foreach($suitcases as $suitcase)
-                                <option value='{{$suitcase->id}}'>{{ $suitcase->name }}</option>
+                                    <option value='{{$suitcase->id}}'>{{ $suitcase->name }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -92,9 +91,8 @@
             </div>
         </div>
     </div>
-</form>
-<table class="employersTable">
-    <thead>
+    <table class="employersTable">
+        <thead>
         <tr>
             <td class="employersHeader" style="width:50px">المسلسل</td>
             <td class="employersHeader" style="width:200px">@lang('archive.global.organization')</td>
@@ -104,40 +102,40 @@
             <td class="employersHeader" style="width:100px">@lang('archive.global.type')</td>
             <td class="employersHeader" style="width:100px">@lang('archive.global.operation')</td>
         </tr>
-    </thead>
-    <tbody class='rows'>
+        </thead>
+        <tbody class='rows'>
         @if(count($documents)>0)
-        @foreach($documents as $document)
-        <tr>
-            <td>{{$document->type_id}}</td>
-            <td>{{$document->organization->name}}</td>
-            <td>{{$document->subject->name}}</td>
-            <td>{{$document->suit_case->name}}</td>
-            <td>{{$document->description}}</td>
-            <td>{{$document->type}}</td>
-            <td>
-                <a href="\document/{{$document->id}}/edit">
-                    <i class="fa fa-edit"></i>
-                </a>
-                <form method='post' action='/document/{{$document->id}}' id='deleteform{{$document->id}}'>@csrf @method('DELETE')<i class="delete fa fa-trash" value="{{$document->id}}"></i></form>
-            </td>
-        </tr>
-        @endforeach
+            @foreach($documents as $document)
+                <tr>
+                    <td>{{$document->type_id}}</td>
+                    <td>{{$document->organization->name}}</td>
+                    <td>{{$document->subject->name}}</td>
+                    <td>{{$document->suit_case->name}}</td>
+                    <td>{{$document->description}}</td>
+                    <td>{{$document->type}}</td>
+                    <td>
+                        <a href="\document/{{$document->id}}/edit">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                        <form method='post' action='/document/{{$document->id}}' id='deleteform{{$document->id}}'>@csrf @method('DELETE')<i class="delete fa fa-trash" value="{{$document->id}}"></i></form>
+                    </td>
+                </tr>
+            @endforeach
         @else
-        <tr>
-            <td>0</td>
-            <td>لم يتم إضافة اي مكاتبة</td>
-            <td>لم يتم إضافة اي مكاتبة</td>
-            <td>لم يتم إضافة اي مكاتبة</td>
-            <td>لم يتم إضافة اي مكاتبة</td>
-            <td><i class="fas fa-2x fa-ellipsis-h"></i></td>
-        </tr>
+            <tr>
+                <td>0</td>
+                <td>لم يتم إضافة اي مكاتبة</td>
+                <td>لم يتم إضافة اي مكاتبة</td>
+                <td>لم يتم إضافة اي مكاتبة</td>
+                <td>لم يتم إضافة اي مكاتبة</td>
+                <td><i class="fas fa-2x fa-ellipsis-h"></i></td>
+            </tr>
         @endif
-    </tbody>
+        </tbody>
 
-</table>
-<div class="link-container">
-    {{$documents->links()}}
-</div>
+    </table>
+    <div class="link-container">
+        {{$documents->links()}}
+    </div>
 
 @endsection

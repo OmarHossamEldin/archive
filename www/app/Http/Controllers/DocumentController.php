@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Lang;
 use Exception;
 use Illuminate\Support\Facades\DB;
 
-/** 
+/**
  * A document is considered as a file
  */
 class DocumentController extends Controller
@@ -47,8 +47,8 @@ class DocumentController extends Controller
     {
         $subjects = Subject::all();
         $active_suitcase = Suitcase::where('current_flag', 1)->first();
-    
-        $leaf_organizations_ids = DB::select('select id from organizations where `id` in 
+
+        $leaf_organizations_ids = DB::select('select id from organizations where `id` in
         (select `organization_id` from organizations)');
         $leaf_organizations_ids = array_column($leaf_organizations_ids, 'id');
         $organizations = Organization::whereNotIn('id', $leaf_organizations_ids)->get();
@@ -117,7 +117,7 @@ class DocumentController extends Controller
         $tree_id = $request['tree_id'];
         return $this->_serial($type, $tree_id);
     }
-    
+
     // defined the siganture with underscore to illustrate private
     private function _serial($type, $tree_id) {
         // return serial based on whether it's an imported or exported document
@@ -133,7 +133,7 @@ class DocumentController extends Controller
         if ($previously_taken_serial == null) {
             // retrieve ids of organizations where they belong to the same root tree.
             $same_tree_organization_ids = DB::table('organizations')->select('id')->where('root_organization_id', '=', $tree_id)->get()->toArray();
-            // retrieve all documents of the same tree and get the latest one. 
+            // retrieve all documents of the same tree and get the latest one.
             $same_tree_organization_ids = array_column($same_tree_organization_ids, 'id');
             $serial = DB::table('documents')->select('type_id')
                 ->where('type', '=', $type)
@@ -171,8 +171,8 @@ class DocumentController extends Controller
     {
         $subjects = Subject::all();
         $suitcases = SuitCase::all();
-        $organizations = DB::select('select * from organizations where `id` not in 
-                                        (select id from organizations where `id` in 
+        $organizations = DB::select('select * from organizations where `id` not in
+                                        (select id from organizations where `id` in
                                             (select `organization_id` from organizations)
                                         )');
         return view('documents.edit')->with([
@@ -241,16 +241,15 @@ class DocumentController extends Controller
         }
     }
 
-    public function search(Request $request)
-    {
-        dd($request->organization);
+    public function search(Request $request) {
         $conditions = [
-            $request->organization_id != null ? ['organization_id', '=', $request->organization] : [1],
-            $request->subject != null  ? ['subject', '=', $request->subject] : [1],
-            $request->suitcase != null ? ['suitcase', '=', $request->suitcase] : [1],
-            $request->description != null ? ['description', 'like', '%' . $request->description . '%'] : [1],
+            $request->organization_id != null ? ['organization_id', '=', $request->organization_id] : ['', '', 1],
+            $request->subject_id != null ? ['subject_id', '=', $request->subject_id] : ['', '', 1],
+            $request->suitcase_id != null ? ['suit_cases_id', '=', $request->suitcase_id] : ['', '', 1],
+            $request->type != null ? ['type', '=', $request->type] : ['', '', 1],
+            $request->description != null ? ['description', '=', $request->description] : ['','',1],
+            $request->type_id != null ? ['type_id', '=', $request->type_id] : ['', '', 1]
         ];
-        dd($conditions);
         return Document::where($conditions)->get();
     }
 }
