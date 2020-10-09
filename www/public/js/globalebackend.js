@@ -148,7 +148,24 @@ $(document).ready(function () {
                 type_id: type_id,
             },
             success: function (data) {
-                console.log(data);
+                $('.rows').html(' ');
+                for(let i=0; i<data.length;i++ ){
+                    $('.rows').append(`<tr>
+                        <td>${data[i].type_id}</td>
+                        <td>${data[i].organization.name}</td>
+                        <td>${data[i].subject.name}</td>
+                        <td>${data[i].suit_case.name}</td>
+                        <td>${data[i].description}</td>
+                        <td>${data[i].type}</td>
+                        <td>
+                        <a href="\document/${data[i].id}/edit">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                        <form method='post' action='/document/${data[i].id}' id='deleteform${data[i].id}'><input type="hidden" name="_method" value="DELETE" autocomplete="off"><i class="delete fa fa-trash" value="${data[i].id}"></i></form>
+                    </td>
+                    </tr>`);
+                    
+                }
             },
         });
     });

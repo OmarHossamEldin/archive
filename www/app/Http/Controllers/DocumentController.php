@@ -250,6 +250,6 @@ class DocumentController extends Controller
             $request->description != null ? ['description', '=', $request->description] : ['','',1],
             $request->type_id != null ? ['type_id', '=', $request->type_id] : ['', '', 1]
         ];
-        return Document::where($conditions)->get();
+        return Document::where($conditions)->with('organization', 'suit_case', 'subject')->get();
     }
 }

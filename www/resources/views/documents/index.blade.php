@@ -14,6 +14,7 @@
                         </div>
                         <div class="row">
                             <select class='form-control select organization' name='organization_id' required>
+                                <option ></option>
                                 @foreach($organizations as $organization)
                                     <option value='{{$organization->id}}'>{{ $organization->name }}</option>
                                 @endforeach
@@ -28,6 +29,7 @@
                         </div>
                         <div class="row">
                             <select class='form-control select subject' name='subjects_id' required>
+                                <option ></option>
                                 @foreach($subjects as $subject)
                                     <option value='{{$subject->id}}'>{{ $subject->name }}</option>
                                 @endforeach
@@ -35,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  
             <div class="col-4">
                 <div class="row">
                     <div class="form-group">
@@ -44,6 +46,7 @@
                         </div>
                         <div class="row">
                             <select class='form-control select suitcase' name='suitcase_id' required>
+                                <option ></option>
                                 @foreach($suitcases as $suitcase)
                                     <option value='{{$suitcase->id}}'>{{ $suitcase->name }}</option>
                                 @endforeach
