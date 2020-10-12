@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Subject;
+use Illuminate\Support\Facades\Lang;
+use Exception;
 
 class SubjectController extends Controller
 {
@@ -15,7 +17,8 @@ class SubjectController extends Controller
      */
     public function index()
     {
-      return Subject::all();
+       $subjects=Subject::paginate(25);
+       return view('subjects.index')->with('subjects',$subjects);
     }
 
     /**
@@ -25,7 +28,7 @@ class SubjectController extends Controller
      */
     public function create()
     {
-        //
+        return view('subjects.create');
     }
 
     /**
@@ -40,6 +43,7 @@ class SubjectController extends Controller
             'name' => 'required']);
 
         Subject::create($validated_request);
+        return back()->with('success', Lang::get('archive.subject.success.add'));
     }
 
     /**
@@ -59,9 +63,9 @@ class SubjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Subject $subject)
     {
-        //
+        return view('subjects.edit')->with('subject', $subject);
     }
 
     /**
@@ -73,7 +77,10 @@ class SubjectController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return Subject::findorFail($id)->update($request->all());
+        if(Subject::findorFail($id)->update($request->all()))
+            return back()->with('success', Lang::get('archive.subject.success.edit'));
+        else
+            return back()->with('error', Lang::get('archive.subject.fail.edit'));
     }
 
     /**
@@ -84,7 +91,12 @@ class SubjectController extends Controller
      */
     public function destroy(Subject $subject)
     { 
-        return $subject->delete();
+        try {
+            $subject->delete();
+            return back()->with('success', Lang::get('archive.subject.success.delete'));
+        } catch (Exception $e) {
+            return back()->with('error', Lang::get('archive.subject.fail.delete'));
+        }
     }
 
     public function search($keyword)

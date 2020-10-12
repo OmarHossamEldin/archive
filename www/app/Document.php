@@ -14,7 +14,7 @@ class Document extends Model
     }
     public function suit_case()
     {
-        return $this->belongsTo(SuitCase::class);
+        return $this->belongsTo(SuitCase::class, 'suit_cases_id', 'id');
     }
     public function organization()
     {

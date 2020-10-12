@@ -1,7 +1,8 @@
 <?php
 
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\App;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,33 +14,73 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-    
+
 //Authenticated
-Route::group(['middleware'=>'auth'], function(){
+Route::group(['middleware' => 'auth'], function () {
+
+    Route::group(['middleware' => 'locale:en'], function () {
+
+        Route::get('/logout', 'GateController@logout')->name('logout');
+        Route::get('/backup/view', 'DatabaseBackupController@index')->name('backup.view');
+        Route::get('/organization/tree', 'OrganizationController@tree');
+        Route::post('/document/serial', 'DocumentController@serial');
+        Route::get('/suitcase/activate/{id}', 'SuitCaseController@activate');
+        Route::get('/document/{document}/download', 'DocumentController@download');
+        Route::resources([
+            'suitcase' => SuitCaseController::class,
+            'document' => DocumentController::class,
+            'organization' => OrganizationController::class,
+            'subject' => SubjectController::class,
+        ]);
+
+        Route::group(['prefix' => 'search'], function () {
+            Route::post('/document', 'DocumentController@search');
+            Route::get('/subject/{keyword}', 'SubjectController@search');
+            Route::get('/suitcase/{keyword}', 'SuitCaseController@search');
+            Route::get('/organization/{keyword}', 'OrganizationController@search');
+        });
+
+
+        Route::group(['prefix' => 'database'], function () {
+            Route::get('/backup', 'DatabaseBackupController@backup');
+            Route::post('/restore', 'DatabaseBackupController@restore');
+        });
+    });
     
+    Route::group(['middleware' => 'locale:ar'], function () {
+
+        Route::get('/logout', 'GateController@logout')->name('logout');
+        Route::get('/backup/view', 'DatabaseBackupController@index')->name('backup.view');
+        Route::get('/organization/tree', 'OrganizationController@tree');
+        Route::post('/document/serial', 'DocumentController@serial');
+        Route::get('/suitcase/activate/{id}', 'SuitCaseController@activate');
+        Route::get('/document/{document}/download', 'DocumentController@download');
+        Route::resources([
+            'suitcase' => SuitCaseController::class,
+            'document' => DocumentController::class,
+            'organization' => OrganizationController::class,
+            'subject' => SubjectController::class,
+        ]);
+
+        Route::group(['prefix' => 'search'], function () {
+            Route::post('/document', 'DocumentController@search');
+            Route::get('/subject/{keyword}', 'SubjectController@search');
+            Route::get('/suitcase/{keyword}', 'SuitCaseController@search');
+            Route::get('/organization/{keyword}', 'OrganizationController@search');
+        });
+
+
+        Route::group(['prefix' => 'database'], function () {
+            Route::get('/backup', 'DatabaseBackupController@backup');
+            Route::post('/restore', 'DatabaseBackupController@restore');
+        });
+    });
 });
 
 //UnAuthenticated
-Route::get('/','GateController@home')->name('login'); // HomePage => loginForm
+Route::group(['middleware' => 'guest'], function () {
 
-Route::resources([
-    'suitcase' => SuitCaseController::class,
-    'document' => DocumentController::class,
-    'organization' => OrganizationController::class,
-    'subject' => SubjectController::class,
-]);
+    Route::get('/', 'GateController@home')->name('login.form'); // HomePage => loginForm
 
-Route::group(['prefix' => 'search'], function () {
-    Route::get('/document/{keyword}','DocumentController@search');
-    Route::get('/subject/{keyword}','SubjectController@search');
-    Route::get('/suitcase/{keyword}','SuitCaseController@search');
-    Route::get('/organization/{keyword}','OrganizationController@search');
+    Route::post('/login', 'GateController@login')->name('login'); // login to the app
 });
-
-Route::group(['prefix' => 'database'], function () {
-    Route::get('/backup', 'DatabaseBackupController@backup');
-    Route::post('/restore', 'DatabaseBackupController@restore');
-
-});
-
-

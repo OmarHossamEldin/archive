@@ -11,7 +11,7 @@
     },
     "main_window": {
         "title": "Archive",
-        "icon": "",
+        "icon": "archive.ico",
         "default_size": [1024, 800],
         "minimum_size": [640, 480],
         "maximum_size": [0, 0],
@@ -30,13 +30,13 @@
         "default_size": [1024, 800]
     },
     "web_server": {
-        "listen_on": ["127.0.0.1", 0],
-        "www_directory": "www/public/",
+        "listen_on": ["127.0.0.1", 8000],
+        "www_directory": "www/public",
         "index_files": ["index.html", "index.php"],
         "cgi_interpreter": "php/php-cgi.exe",
         "cgi_extensions": ["php"],
         "cgi_temp_dir": "",
-        "404_handler": "/pretty-urls.php",
+        "404_handler": "/index.php",
         "hide_files": []
     },
     "chrome": {

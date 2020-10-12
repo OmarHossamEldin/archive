@@ -17,6 +17,7 @@ class CreateOrganizationsTable extends Migration
             $table->id();
             $table->string('name');
             $table->foreignId('organization_id')->nullable()->constrained('organizations')->onDelete('restrict');
+            $table->foreignId('root_organization_id')->nullable()->constrained('organizations')->onDelete('restrict');
             $table->timestamps();
         });
     }

@@ -8,9 +8,17 @@ use Illuminate\Support\Facades\Storage;
 
 class DatabaseBackupController extends Controller
 {
+    public function index()
+    {
+        return view('backup');
+    }
 
     public function backup(Request $request)
     {
+        $validated_request = $request->validate([
+            'backup_folder_path' => 'required',
+        ]);
+        dd($request->all());
         $pos = strpos(__dir__, "app\Http\Controllers");
         $database_source = substr_replace(__dir__, "database\database.sqlite", $pos);
 

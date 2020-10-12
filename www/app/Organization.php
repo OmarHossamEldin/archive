@@ -13,6 +13,12 @@ class Organization extends Model
     }
     public function parent()
     {
-        return $this->belongsTo(Organiztion::class);
+        return $this->belongsTo(Organization::class, 'organization_id', 'id');
+    }
+    public function children(){
+        return $this->hasMany(Organization::class, 'organization_id', 'id');
+    }
+    public function root(){
+        return $this->belongsTo(Organization::class, 'root_organization_id', 'id');
     }
 }
