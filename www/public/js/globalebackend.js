@@ -173,7 +173,7 @@ $(document).ready(function () {
                         <input type="hidden" name="_method" value="DELETE" autocomplete="off">
                         <i class="delete fa fa-trash" value="${data[i].id}"></i>
                         </form>
-                       
+                        ${data[i].file_path != null ? `<a href="\document/${data[i].id}/download"><i class="fa fa-download"></i></a>` : ""} 
                     </td>
                     </tr>`);
                 }
