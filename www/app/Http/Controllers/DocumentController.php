@@ -174,10 +174,10 @@ class DocumentController extends Controller
     {
         $subjects = Subject::all();
         $active_suitcase = Suitcase::where('current_flag', 1)->first();
-        $organizations = DB::select('select * from organizations where `id` not in
-                                        (select id from organizations where `id` in
-                                            (select `organization_id` from organizations)
-                                        )');
+        $leaf_organizations_ids = DB::select('select id from organizations where `id` in
+        (select `organization_id` from organizations)');
+        $leaf_organizations_ids = array_column($leaf_organizations_ids, 'id');
+        $organizations = Organization::whereNotIn('id', $leaf_organizations_ids)->where('root_organization_id', '=', $document->organization->root_organization_id)->get();
         return view('documents.edit')->with([
             'document' => $document,
             'subjects' => $subjects,
@@ -201,6 +201,7 @@ class DocumentController extends Controller
             'date' => 'required',
             'subject_id' => 'required',
             'suit_cases_id' => 'required',
+            'organization_id' => 'required'
         ]);
 
         if ($request->hasFile('file_path') && $request->file('file_path')->isValid()) {

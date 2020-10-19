@@ -30,7 +30,14 @@
     </div>
     <div class="form-group">
         <label for="organization">@lang('archive.document.create.organization')</label>
-        <input type='text' class='form-control' value="{{$document->organization->name}}" disabled>
+        <select class='form-control select organization-selector' name='organization_id' required>
+            <option value="{{$document->organization->id}}">{{$document->organization->name}}</option>
+            @foreach($organizations as $organization)
+            @if ($organization != $document->organization)
+            <option value="{{$organization->id}}">{{$organization->name}}</option>
+            @endif
+            @endforeach
+        </select>
     </div>
     <div class="form-group">
         <label for="subject">@lang('archive.global.subject')</label>
