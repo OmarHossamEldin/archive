@@ -74,7 +74,7 @@
                         <div class="row">
                             <div class="col-4">
                                 <label for="type" >@lang('archive.document.create.type.import')</label>
-                                <input type="radio" id="import" class='search-type' name="type" value="@lang('archive.document.create.type.import')" checked>
+                                <input type="radio" id="import" class='search-type' name="type" value="@lang('archive.document.create.type.import')">
                             </div>
                             <div class="col-4">
                                 <label for="type">@lang('archive.document.create.type.export')</label>
@@ -95,16 +95,16 @@
         </div>
     </div>
     <hr>
-    <table class="employersTable">
+    <table class="employersTable" style="width: auto;">
         <thead>
         <tr>
-            <td class="employersHeader" style="width:50px">@lang('archive.document.create.serial')</td>
-            <td class="employersHeader" style="width:200px">@lang('archive.global.organization')</td>
-            <td class="employersHeader" style="width:200px">@lang('archive.global.subject')</td>
-            <td class="employersHeader" style="width:100px">@lang('archive.global.suitcase')</td>
-            <td class="employersHeader" style="width:100px">@lang('archive.document.create.description')</td>
-            <td class="employersHeader" style="width:100px">@lang('archive.global.type')</td>
-            <td class="employersHeader" style="width:100px">@lang('archive.global.operation')</td>
+            <td class="employersHeader">@lang('archive.document.create.serial')</td>
+            <td class="employersHeader">@lang('archive.document.create.description')</td>
+            <td class="employersHeader">@lang('archive.global.organization')</td>
+            <td class="employersHeader">@lang('archive.global.subject')</td>
+            <td class="employersHeader">@lang('archive.global.suitcase')</td>
+            <td class="employersHeader">@lang('archive.global.type')</td>
+            <td class="employersHeader">@lang('archive.global.operation')</td>
         </tr>
         </thead>
         <tbody class='rows'>
@@ -112,10 +112,10 @@
             @foreach($documents as $document)
                 <tr>
                     <td>{{$document->type_id}}</td>
+                    <td>{{$document->description}}</td>
                     <td>{{$document->organization->name}}</td>
                     <td>{{$document->subject->name}}</td>
                     <td>{{$document->suit_case->name}}</td>
-                    <td>{{$document->description}}</td>
                     <td>{{$document->type}}</td>
                     <td>
                         <a href="\document/{{$document->id}}/edit">
@@ -133,6 +133,7 @@
         @else
             <tr>
                 <td>0</td>
+                <td>لم يتم إضافة اي مكاتبة</td>
                 <td>لم يتم إضافة اي مكاتبة</td>
                 <td>لم يتم إضافة اي مكاتبة</td>
                 <td>لم يتم إضافة اي مكاتبة</td>
