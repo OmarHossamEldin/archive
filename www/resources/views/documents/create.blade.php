@@ -8,7 +8,15 @@
 <form method='POST' action='\document' enctype='multipart/form-data'>
     @csrf
     <div class="form-group">
-        <label for="type">@lang('archive.document.create.type.title')</label>
+        <div class="row">
+            <div class="col-6">
+                <label for="type">@lang('archive.document.create.type.title')</label>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <label for="type">@lang('archive.document.create.serial')</label>
+            </div>
+        </div>
         <div class="row">
             <div class="col-1">
                 <label for="type">@lang('archive.document.create.type.import')</label><br>
@@ -18,15 +26,11 @@
                 <label for="type">@lang('archive.document.create.type.export')</label><br>
                 <input type="radio" id="export" class='type' name="type" value="@lang('archive.document.create.type.export')">
             </div>
+            <div class="col-6"></div>
+            <div class="col-4">
+                <input type="number" id="serial" class='form-control' disabled value="">
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="description">@lang('archive.document.create.description')</label>
-        <textarea name='description' class='form-control'></textarea>
-    </div>
-    <div class="form-group">
-        <label for="date">@lang('archive.document.create.date')</label>
-        <input name='date' class='form-control date' required>
     </div>
     <div class="form-group">
         <label for="organization">@lang('archive.document.create.organization')</label>
@@ -37,16 +41,20 @@
         </select>
     </div>
     <div class="form-group">
-        <label for="type">@lang('archive.document.create.serial')</label>
-        <input type="number" id="serial" class='form-control' disabled value="">
-    </div>
-    <div class="form-group">
         <label for="subject">@lang('archive.global.subject')</label>
         <select class='form-control select' name='subject_id' required>
             @foreach($subjects as $subject)
             <option value="{{$subject->id}}">{{$subject->name}}</option>
             @endforeach
         </select>
+    </div>
+    <div class="form-group">
+        <label for="description">@lang('archive.document.create.description')</label>
+        <textarea name='description' class='form-control'></textarea>
+    </div>
+    <div class="form-group">
+        <label for="date">@lang('archive.document.create.date')</label>
+        <input name='date' class='form-control date' required>
     </div>
     <div class="form-group">
         <label for="suitcase">@lang('archive.document.edit.active_suitcase')</label>

@@ -5,7 +5,7 @@ return [
     'global' => [
         'search' => 'بحث',
         'organization' => 'الجهة',
-        'subject' => 'الموضوع',
+        'subject' => 'الموضوع الرئيسي',
         'suitcase' => 'الحقيبة',
         'operation' => 'العمليات',
         'type' => 'الحالة',
@@ -40,7 +40,7 @@ return [
     'sidebar' => [
         'document' => 'المكاتبات',
         'organization' => 'الجهات',
-        'subject' => 'الموضوعات',
+        'subject' => 'الموضوعات الرئيسية',
         'suitcase' => 'الحقائب'
     ],
     'document' => [
@@ -58,7 +58,7 @@ return [
                 'import' => 'وارد',
                 'export' => 'صادر'
             ],
-            'description' => 'التوصيف',
+            'description' => 'اسم المكاتبة',
             'date' => 'التاريخ',
             'organization' => 'الجهة',
             'file' => 'اختر الملف',

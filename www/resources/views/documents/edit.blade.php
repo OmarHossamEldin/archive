@@ -8,21 +8,25 @@
 <form method='POST' action='\document\{{$document->id}}' enctype='multipart/form-data'>
     @csrf @method('PUT')
     <div class="form-group">
-        <label for="type">@lang('archive.document.create.type.title')</label>
         <div class="row">
-            <div class="col-1">
+            <div class="col-6">
+                <label for="type">@lang('archive.document.create.type.title')</label>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <label for="type">@lang('archive.document.create.serial')</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
                 <label for="type">@lang('archive.document.create.type.import')</label><br>
                 <input type="radio" id="import" class='type' name="type" value="{{$document->type}}" checked disabled>
             </div>
+            <div class="col-6"></div>
+            <div class="col-4">
+                <input type="number" class='form-control' disabled value="{{$document->type_id}}">
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="description">@lang('archive.document.create.description')</label>
-        <textarea name='description' class='form-control'>{{$document->description}}</textarea>
-    </div>
-    <div class="form-group">
-        <label for="date">@lang('archive.document.create.date')</label>
-        <input name='date' class='form-control date' required value='{{$document->date}}'>
     </div>
     <div class="form-group">
         <label for="organization">@lang('archive.document.create.organization')</label>
@@ -38,6 +42,14 @@
             @endif
             @endforeach
         </select>
+    </div>
+    <div class="form-group">
+        <label for="description">@lang('archive.document.create.description')</label>
+        <textarea name='description' class='form-control'>{{$document->description}}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="date">@lang('archive.document.create.date')</label>
+        <input name='date' class='form-control date' required value='{{$document->date}}'>
     </div>
     <div class="form-group">
         <label for="suitcase">@lang('archive.document.edit.current_suitcase')</label>
