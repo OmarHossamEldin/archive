@@ -1,0 +1,1 @@
+This directory contains webcached items, sessions, and styling.
