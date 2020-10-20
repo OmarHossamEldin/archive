@@ -95,6 +95,7 @@
         </div>
     </div>
     <hr>
+    <div class="downloadSuitcase" hidden><a href=""><i class="fa fa-download"></i> @lang('archive.document.index.downloadSuitcase')</a></div>
     <table class="employersTable" style="width: auto;">
         <thead>
         <tr>

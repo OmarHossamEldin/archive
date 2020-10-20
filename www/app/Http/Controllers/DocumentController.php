@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Lang;
 use Exception;
 use Facade\FlareClient\Http\Response;
 use Illuminate\Support\Facades\DB;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use ZipArchive;
 
 /**
  * A document is considered as a file
@@ -90,7 +93,7 @@ class DocumentController extends Controller
                 $fileName = $request->file('file_path')->getClientOriginalName();
 
                 // $validated_request["name"] = $serial . '_' . $fileName;
-                $path = $suitcase->name . '/' . $validated_request['type'] . '/' . $validated_request['type_id'];
+                $path = $suitcase->name . DIRECTORY_SEPARATOR . $organization->name . DIRECTORY_SEPARATOR .$validated_request['type'] . DIRECTORY_SEPARATOR. $validated_request['type_id'];
                 $path = $request->file('file_path')->storeAs($path, $fileName);
 
                 $validated_request["file_path"] = $path;
@@ -212,7 +215,7 @@ class DocumentController extends Controller
             if ($document->file_path)
                 Storage::delete($document->file_path);
 
-            $path = $suitcase->name . '/' . $document->type . '/' . $document->type_id;
+            $path = $suitcase->name . DIRECTORY_SEPARATOR . $document->organization->name . DIRECTORY_SEPARATOR .$document->type . DIRECTORY_SEPARATOR . $document->type_id;
             $path = $request->file('file_path')->storeAs($path, $fileName);
             $validated_request["file_path"] = $path;
         }
@@ -265,5 +268,30 @@ class DocumentController extends Controller
         if ($document->file_path)
             return Storage::download($document->file_path);
         return back()->with('error', Lang::get('archive.document.fail.download'));
+    }
+
+    public function downloadSuitcase(Suitcase $suitcase)
+    {
+        $root_path = storage_path("app" . DIRECTORY_SEPARATOR . $suitcase->name);
+        $zip = new ZipArchive();
+        $zipfilename = $suitcase->name . "_compressed.zip";
+        $open_status = $zip->open($zipfilename, ZipArchive::CREATE | ZipArchive::OVERWRITE);
+        $files = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator($root_path),
+            RecursiveIteratorIterator::LEAVES_ONLY
+        );
+
+        foreach ($files as $name => $file) {
+            if (!$file->isDir()) {
+                $file_path = $file->getRealPath();
+                $relative_path = substr($file_path, strlen($root_path) + 1);
+                $zip->addFile($file_path, $relative_path);
+            }
+        }
+        $zip->close();
+        header('Content-Type: application/zip');
+        header('Content-disposition: attachment; filename=' . $zipfilename);
+        header('Content-Length: ' . filesize($zipfilename));
+        return readfile($zipfilename);
     }
 }

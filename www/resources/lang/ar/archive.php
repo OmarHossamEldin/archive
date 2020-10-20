@@ -50,6 +50,9 @@ return [
             'create' => 'إضافة مكاتبة',
             'index' => 'جميع المكاتبات'
         ],
+        'index' => [
+            'downloadSuitcase' => 'تحميل كل المكاتبات للحقيبة'
+        ],
         'create' => [
             'submenu_title' => 'إضافة مكاتبة',
             'serial' => 'رقم المسلسل',
