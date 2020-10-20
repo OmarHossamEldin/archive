@@ -138,6 +138,7 @@ $(document).ready(function () {
     });
     // JQX Tree
     $(".search").click(function () {
+        $('.downloadSuitcase').prop('hidden', true)
         let organization = $(".organization").val(),
             subject = $(".subject").val(),
             suitcase = $(".suitcase").val(),
@@ -156,14 +157,18 @@ $(document).ready(function () {
                 type_id: type_id,
             },
             success: function (data) {
+                if(suitcase != "" && data.length > 0) {
+                    $('.downloadSuitcase').prop('hidden', false)
+                    $('.downloadSuitcase a').attr('href', `/document/suitcase/${suitcase}/download`)
+                }
                 $('.rows').html(' ');
                 for(let i=0; i<data.length;i++ ){
                     $('.rows').append(`<tr>
                         <td>${data[i].type_id}</td>
+                        <td>${data[i].description == null ? '' : data[i].description} </td>
                         <td>${data[i].organization.name}</td>
                         <td>${data[i].subject.name}</td>
                         <td>${data[i].suit_case.name}</td>
-                        <td>${data[i].description == null ? '' : data[i].description} </td>
                         <td>${data[i].type}</td>
                         <td>
                         <a href="\document/${data[i].id}/edit">
