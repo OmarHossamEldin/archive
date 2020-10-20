@@ -84,8 +84,8 @@ class SuitCaseController extends Controller
     {
         $subjects = Subject::all();
         return view('suitcases.edit')->with([
-            'suitcase'=> $suitcase,
-            'subjects'=>$subjects
+            'suitcase' => $suitcase,
+            'subjects' => $subjects
         ]);
     }
 
@@ -99,14 +99,15 @@ class SuitCaseController extends Controller
     public function update(Request $request, SuitCase $suitcase)
     {
         // update the directory info(name)
-        Storage::move($suitcase->name, $request->name);
+        $storage_path = storage_path('app' . DIRECTORY_SEPARATOR . $suitcase->name);
+        if (file_exists($storage_path) && $suitcase->name != $request->name)
+            Storage::move($suitcase->name, $request->name);
 
         // update the suitcase info in the database
-        if($suitcase->update($request->all()))
+        if ($suitcase->update($request->all()))
             return back()->with('success', Lang::get('archive.suitcase.success.edit'));
         else
             return back()->with('error', Lang::get('archive.suitcase.fail.edit'));
-
     }
 
     /**
@@ -143,6 +144,6 @@ class SuitCaseController extends Controller
         SuitCase::where('current_flag', 1)->update(['current_flag' => 0]);
 
         // activate the given suitcase
-        return SuitCase::find($id)->update(['current_flag'=> '1']);
+        return SuitCase::find($id)->update(['current_flag' => '1']);
     }
 }

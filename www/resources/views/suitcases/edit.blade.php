@@ -24,12 +24,8 @@
         <input type='text' name='weight' class='form-control ' value="{{$suitcase->weight}}">
     </div>
     <div class="form-group">
-        <label for="subject">@lang('archive.suitcase.create.current_flag')</label>
-        <select class='form-control select' name='current_flag' value="{{$suitcase->name}}">
-            @foreach($subjects as $subject)
-            <option value="{{$subject->id}}">{{$subject->name}}</option>
-            @endforeach
-        </select>
+        <label for="current_flag">@lang('archive.suitcase.create.current_flag')</label>
+        <input type="checkbox" {{$suitcase->current_flag ? 'checked' : ''}} disabled>
     </div>
     <div class="form-group">
         <label for="comment">@lang('archive.suitcase.create.comment')</label>
