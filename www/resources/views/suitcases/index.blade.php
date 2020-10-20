@@ -3,9 +3,8 @@
 الوثائق
 @endsection
 @section('content')
-<table class="employersTable">
+<table class="employersTable" style="width: auto;">
         <tr>
-            <td class="employersHeader" style="width:50px">المسلسل</td>
             <td class="employersHeader" style="width:200px">@lang('archive.suitcase.create.name')</td>
             <td class="employersHeader" style="width:200px">@lang('archive.suitcase.create.send_date')</td>
             <td class="employersHeader" style="width:100px">@lang('archive.suitcase.create.airline')</td>
@@ -17,7 +16,6 @@
         @if(count($suitcases)>0)
             @foreach($suitcases as $suitcase)
             <tr id="suticase-row{{$suitcase->id}}" class="{{ $suitcase->current_flag ? 'alert alert-info' : '' }}">
-                <td>{{$suitcase->id}}</td>
                 <td>{{$suitcase->name}}</td>
                 <td>{{$suitcase->send_date}}</td>
                 <td>{{$suitcase->airline}}</td>
