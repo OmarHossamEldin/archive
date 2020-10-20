@@ -96,13 +96,13 @@ class SuitCaseController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, SuitCase $suitcase)
     {
         // update the directory info(name)
-
+        Storage::move($suitcase->name, $request->name);
 
         // update the suitcase info in the database
-        if(SuitCase::findorFail($id)->update($request->all()))
+        if($suitcase->update($request->all()))
             return back()->with('success', Lang::get('archive.suitcase.success.edit'));
         else
             return back()->with('error', Lang::get('archive.suitcase.fail.edit'));
