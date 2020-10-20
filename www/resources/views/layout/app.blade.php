@@ -88,11 +88,6 @@
                         </ul>
                     </li>
                     <li class="logout">
-                        <a href="{{route('backup.view')}}">
-                            <span style='color:#f44336; '><i class="fas fa-folder"></i> @lang('archive.global.backupop')</span>
-                        </a>
-                    </li>
-                    <li class="logout">
                         <a href="{{route('logout')}}">
                             <span><i class="fas fa-sign-out-alt"></i> @lang('archive.global.logout_btn')</span>
                         </a>
