@@ -9,7 +9,8 @@
     @csrf @method('PUT')
     <div class="form-group">
         <label for="serial">@lang('archive.suitcase.create.name')</label>
-        <input type="text" name='name' class='form-control' value="{{$suitcase->name}}" required>
+        <input type="text" name='name' class='form-control' value="{{$suitcase->name}}" required pattern="[^\.\\\?؟]*">
+        <p class='caution'>@lang('archive.suitcase.create.name_caution')</p>
     </div>
     <div class="form-group">
         <label for="send_date">@lang('archive.suitcase.create.send_date')</label>
