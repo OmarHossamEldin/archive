@@ -3,6 +3,7 @@
 الوثائق
 @endsection
 @section('content')
+
 <table class="employersTable" style="width: auto;">
         <tr>
             <td class="employersHeader" style="width:200px">@lang('archive.suitcase.create.name')</td>
@@ -18,8 +19,8 @@
             <tr id="suticase-row{{$suitcase->id}}" class="{{ $suitcase->current_flag ? 'alert alert-info' : '' }}">
                 <td>{{$suitcase->name}}</td>
                 <td>{{$suitcase->send_date}}</td>
-                <td>{{$suitcase->airline}}</td>
-                <td>{{$suitcase->weight}}</td>
+                <td class="{{$suitcase->airline == null ? 'table-dark text-dark' : ''}}">{{$suitcase->airline}}</td>
+                <td class="{{$suitcase->weight == null ? 'table-dark text-dark' : ''}}">{{$suitcase->weight}}</td>
                 <td><input type="checkbox" class="{{ $suitcase->current_flag ? 'checked-row' : '' }} suitcase-checkbox" value="{{$suitcase->id}}" {{ $suitcase->current_flag ? 'checked disabled' : '' }}></td>
                 <td>
                     <a href="\suitcase/{{$suitcase->id}}/edit">

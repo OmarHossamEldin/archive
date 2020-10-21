@@ -113,7 +113,7 @@
             @foreach($documents as $document)
                 <tr>
                     <td>{{$document->type_id}}</td>
-                    <td>{{$document->description}}</td>
+                    <td class="{{$document->description == null ? 'table-dark text-dark' : ''}}">{{$document->description}}</td>
                     <td>{{$document->organization->name}}</td>
                     <td>{{$document->subject->name}}</td>
                     <td>{{$document->suit_case->name}}</td>

@@ -107,3 +107,7 @@ button[type="submit"]{cursor:pointer}
     font-size: small; 
     color: gray;
 }
+
+hr {
+    background-color: white;
+}
