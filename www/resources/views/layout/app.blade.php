@@ -87,6 +87,7 @@
                             <li><a href="\suitcase">@lang('archive.suitcase.submenus.index')</a></li>
                         </ul>
                     </li>
+                    <hr>
                     <li class="logout">
                         <a href="{{route('logout')}}">
                             <span><i class="fas fa-sign-out-alt"></i> @lang('archive.global.logout_btn')</span>
