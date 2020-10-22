@@ -126,7 +126,7 @@ class SuitCaseController extends Controller
             // delete the file record from the database
             return back()->with('success', Lang::get('archive.suitcase.success.delete'));
         } catch (Exception $e) {
-            return back()->with('fail', Lang::get('archive.suitcase.fail.delete'));
+            return back()->with('error', Lang::get('archive.suitcase.fail.delete'));
         }
     }
 
