@@ -28,9 +28,9 @@ return [
     ],
     'app' => [
         'name' => 'برنامج الأرشيف',
-        'version' => '1.0 إصدار',
+        'version' => '1.1 إصدار',
     ],
-    'copyright' => 'جميع الحقوق محفوظة ل',
+    'copyright' => 'This program is made with love for Gen. Khalid Mosbah',
     'login' => [
         'button' => 'متابعة',
         'header' => 'تسجيل الدخول',
