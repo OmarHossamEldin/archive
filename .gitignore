@@ -1,3 +1,4 @@
 webcache/*
 *.zip
 *.sqlite
+*.log
