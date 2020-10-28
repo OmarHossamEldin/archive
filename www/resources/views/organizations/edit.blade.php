@@ -14,24 +14,7 @@
     </div>
     <div class="form-group">
         <label for="organization">@lang('archive.organization.create.parent_organization')</label>
-        <select class='form-control select' name='organization_id' selected='{{$organization->organization_id}}' required>
-            @if($organization->parent != null)
-            <option value='{{$organization->parent->id}}'>{{ $organization->parent->name }}</option>
-                @foreach($organization_global as $organization_item)
-                @if($organization_item->id != $organization->id && $organization_item->id != $organization->parent->id)
-                <option value='{{$organization_item->id}}'>{{ $organization_item->name }}</option>
-                @endif
-                @endforeach
-            @else
-            <option value='null'>@lang('archive.global.not_available')</option>
-            @foreach($organization_global as $organization_item)
-            @if($organization_item->id != $organization->id)
-                <option value='{{$organization_item->id}}'>{{ $organization_item->name }}</option>
-            @endif
-            @endforeach    
-            @endif
-            
-        </select>
+        <input type="text" class='form-control' value='{{$organization->parent != null ? $organization->parent->name : ""}}' readonly>
     </div>
     <div class="form-group">
         <div class="row">

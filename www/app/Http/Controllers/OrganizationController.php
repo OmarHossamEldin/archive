@@ -103,22 +103,9 @@ class OrganizationController extends Controller
     public function update(Request $request, Organization $organization)
     {
         $validated_request = $request->validate([
-            'name' => 'nullable',
-            'organization_id' => 'nullable',
+            'name' => 'required',
         ]);
-        
-        $organization_id = $validated_request['organization_id'];
-        $root_organization = $organization_id == null ? null : Organization::findOrFail($organization_id);
-        
-        if ($root_organization == null) // if the organization has no parent
-            $root_organization_id =  null; 
-        else { // The organization is associated with a parent
-            if($root_organization->root == null) // is this parent root node, i.e., has no root_organization_id
-                $root_organization_id = $root_organization->id; // then associate that root node id with the organization_id of the submitted child
-            else // this parent ISN'T a root and has a root organization id, then associate the child with that root id
-                $root_organization_id = $root_organization->root->id;
-        }
-        $validated_request['root_organization_id'] = $root_organization_id;
+        // Disable of parent organization update is due to the need of changing the serial-ing too.
         if ($organization->update($validated_request))
             return back()->with('success', Lang::get('archive.organization.success.edit'));
         else
