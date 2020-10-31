@@ -270,28 +270,18 @@ class DocumentController extends Controller
         return back()->with('error', Lang::get('archive.document.fail.download'));
     }
 
-    public function downloadSuitcase(Suitcase $suitcase)
+    public function downloadSuitcase(Request $request)
     {
-        $root_path = storage_path("app" . DIRECTORY_SEPARATOR . $suitcase->name);
         $zip = new ZipArchive();
-        $zipfilename = $suitcase->name . "_compressed.zip";
+        $zipfilename = "documents.zip";
         $open_status = $zip->open($zipfilename, ZipArchive::CREATE | ZipArchive::OVERWRITE);
-        $files = new RecursiveIteratorIterator(
-            new RecursiveDirectoryIterator($root_path),
-            RecursiveIteratorIterator::LEAVES_ONLY
-        );
 
-        foreach ($files as $name => $file) {
-            if (!$file->isDir()) {
-                $file_path = $file->getRealPath();
-                $relative_path = substr($file_path, strlen($root_path) + 1);
-                $zip->addFile($file_path, $relative_path);
-            }
+        foreach ($request->searched_files as $key => $document) {
+            $file_path = storage_path("app") . DIRECTORY_SEPARATOR . $document["file_path"];
+            $filename = basename($file_path);
+            $zip->addFile($file_path, $filename);
         }
         $zip->close();
-        header('Content-Type: application/zip');
-        header('Content-disposition: attachment; filename=' . $zipfilename);
-        header('Content-Length: ' . filesize($zipfilename));
-        return readfile($zipfilename);
+        return "/$zipfilename";
     }
 }

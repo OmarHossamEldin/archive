@@ -157,12 +157,11 @@ $(document).ready(function () {
                 type_id: type_id,
             },
             success: function (data) {
-                if(suitcase != "" && data.length > 0) {
+                if (data.length > 0) {
                     $('.downloadSuitcase').prop('hidden', false)
-                    $('.downloadSuitcase a').attr('href', `/document/suitcase/${suitcase}/download`)
                 }
                 $('.rows').html(' ');
-                for(let i=0; i<data.length;i++ ){
+                for (let i = 0; i < data.length; i++) {
                     $('.rows').append(`<tr>
                         <td>${data[i].type_id}</td>
                         <td>${data[i].description == null ? '' : data[i].description} </td>
@@ -182,6 +181,23 @@ $(document).ready(function () {
                     </td>
                     </tr>`);
                 }
+                $(".downloadSuitcaseBtn").click(function () {
+                    event.preventDefault();
+                    $.ajax({
+                        url: `/document/download/suitcase`,
+                        method: "POST",
+                        data: {
+                            searched_files: data
+                        },
+                        success: function (url) {
+                            var a = document.createElement("a");
+                            a.href = url;
+                            document.body.appendChild(a); // we need to append the element to the dom -> otherwise it will not work in firefox
+                            a.click();
+                            a.remove(); //afterwards we remove the element again                  
+                        }
+                    })
+                });
                 $(".delete").click(function () {
                     event.preventDefault(); // prevent  the defalut
                     let item = $(this).attr("value");

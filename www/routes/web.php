@@ -26,7 +26,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::post('/document/serial', 'DocumentController@serial');
         Route::get('/suitcase/activate/{id}', 'SuitCaseController@activate');
         Route::get('/document/{document}/download', 'DocumentController@download');
-        Route::get('/document/suitcase/{suitcase}/download', 'DocumentController@downloadSuitcase');
+        Route::post('/document/download/suitcase', 'DocumentController@downloadSuitcase');
         Route::resources([
             'suitcase' => SuitCaseController::class,
             'document' => DocumentController::class,
