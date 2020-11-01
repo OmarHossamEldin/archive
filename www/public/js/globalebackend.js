@@ -138,7 +138,6 @@ $(document).ready(function () {
     });
     // JQX Tree
     $(".search").click(function () {
-        $('.downloadSuitcase').prop('hidden', true)
         let organization = $(".organization").val(),
             subject = $(".subject").val(),
             suitcase = $(".suitcase").val(),
@@ -158,7 +157,7 @@ $(document).ready(function () {
             },
             success: function (data) {
                 if (data.length > 0) {
-                    $('.downloadSuitcase').prop('hidden', false)
+                    $('.downloadSearchResultsDiv').html(`<label class="btn btn-primary downloadSuitcaseBtn"><i class="fa fa-download"></i> تحميل المكاتبات</label>`)
                 }
                 $('.rows').html(' ');
                 for (let i = 0; i < data.length; i++) {
@@ -181,6 +180,7 @@ $(document).ready(function () {
                     </td>
                     </tr>`);
                 }
+                
                 $(".downloadSuitcaseBtn").click(function () {
                     event.preventDefault();
                     $.ajax({
@@ -190,11 +190,7 @@ $(document).ready(function () {
                             searched_files: data
                         },
                         success: function (url) {
-                            var a = document.createElement("a");
-                            a.href = url;
-                            document.body.appendChild(a); // we need to append the element to the dom -> otherwise it will not work in firefox
-                            a.click();
-                            a.remove(); //afterwards we remove the element again                  
+                            location.href = url
                         }
                     })
                 });

@@ -95,9 +95,7 @@
         </div>
     </div>
     <hr>
-    <div class="downloadSuitcase" hidden>
-        <button class="btn btn-primary downloadSuitcaseBtn" type='submit'><i class="fa fa-download"></i> @lang('archive.document.index.downloadSuitcase')</button>
-    </div>
+    <div class="downloadSearchResultsDiv"></div>
     <table class="employersTable" style="width: auto;">
         <thead>
         <tr>
