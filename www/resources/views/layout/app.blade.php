@@ -44,15 +44,6 @@
                             <h3>@lang('archive.app.name')</h3>
                         </a>
                     </div>
-                    <div class="col-2">
-                        <form  method='post' action='/lang'>
-                            @csrf
-                            <select name='lang' class='locale-changer'>
-                                <option value='en'>English</option>
-                                <option value='ar'>العربية</option>
-                            </select>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>

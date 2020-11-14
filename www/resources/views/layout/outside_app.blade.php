@@ -21,12 +21,6 @@
                         <h3>@lang('archive.app.name')</h3>
                     </a>
                 </div>
-                <div class="col-2">
-                    <select class='locale-changer'>
-                    <a href="/document"><option value='en'>English</option></a>
-                        <option value='ar'>العربية</option>
-                    </select>
-                </div>
             </div>
         </div>
     </div>

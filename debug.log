@@ -11912,3 +11912,352 @@
 - 07:43:07.030 DEBUG: Calling CefQuitMessageLoop()
 - 07:43:07.140 INFO: Ended application
 - 07:43:07.140 INFO: --------------------------------------------------------
+- 09:50:49.015 INFO: --------------------------------------------------------
+- 09:50:49.015 INFO: Started application
+- 09:50:49.015 INFO: Logging to: F:\Programming\archive\debug.log
+- 09:50:49.015 INFO: Log level = DEBUG4
+- 09:50:49.015 INFO: Starting Mongoose 3.9c web server
+- 09:50:49.015 INFO: WWW directory: F:\Programming\archive\www\public
+- 09:50:49.015 INFO: Index files: index.html,index.php
+- 09:50:49.015 INFO: CGI interpreter: F:\Programming\archive\php\php-cgi.exe
+- 09:50:49.015 INFO: CGI pattern: **.php$
+- 09:50:49.015 INFO: Hide files patterns: 
+- 09:50:49.015 INFO: CGI environment variables set: TMP=C:\Users\LAB\AppData\Local\Temp\,TEMP=C:\Users\LAB\AppData\Local\Temp\,TMPDIR=C:\Users\LAB\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:50:49.031 INFO: Web server url: http://127.0.0.1:8000/
+- 09:50:49.031 INFO: remote_debugging_port = 51609
+- 09:50:49.062 DEBUG: Command line string for the browser process: "F:\Programming\archive\archive.exe" --no-sandbox --lang=en-US --log-file="F:\Programming\archive\debug.log" --remote-debugging-port=51609
+- 09:50:50.000 DEBUG: Command line string for the gpu-process process: "F:\Programming\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="F:\Programming\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x0412 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=20.19.15.4509 --gpu-driver-date=9-1-2016 --lang=en-US --log-file="F:\Programming\archive\debug.log" --service-request-channel-token=FDD5F40ADCE2BF90A66EAA9E5BCA6641 --mojo-platform-channel-handle=1932 /prefetch:2
+[1107/095050.608:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:50:50.218 DEBUG: App::OnContextInitialized()
+- 09:50:50.218 DEBUG: Window max width/height = 1840/992
+- 09:50:50.218 DEBUG: GetBrowserWindow(): not found, hwnd = 1904022
+- 09:50:50.218 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:50:50.234 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:50:50.234 DEBUG: StoreBrowserWindow(): hwnd = 1904022
+- 09:50:51.843 DEBUG: ClientHandler::OnAfterCreated()
+- 09:50:51.843 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:50:51.000 DEBUG: Command line string for the renderer process: "F:\Programming\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=2D719F89CDC18C87641D71F1E7EEE93D --lang=en-US --lang=en-US --log-file="F:\Programming\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=2D719F89CDC18C87641D71F1E7EEE93D --renderer-client-id=3 --mojo-platform-channel-handle=2396 /prefetch:1
+- 09:50:51.047 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:50:52.156 DEBUG: OnBrowserCreated()
+- 09:50:55.265 INFO: GET 200 /
+- 09:50:56.500 INFO: GET 200 /css/styles.css
+- 09:50:56.500 INFO: GET 200 /css/fontawesome-all.min.css
+- 09:50:56.500 INFO: GET 200 /css/bootstrap.css
+- 09:50:56.547 INFO: GET 200 /img/archive.png
+- 09:50:56.687 DEBUG: OnContextCreated()
+- 09:50:56.797 INFO: GET 200 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 09:50:56.968 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 09:50:59.484 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/
+- 09:50:59.781 INFO: POST 302 /login
+- 09:50:59.968 INFO: GET 200 /document
+- 09:50:59.969 DEBUG: OnContextCreated()
+- 09:50:59.047 INFO: GET 200 /css/daterangepicker.min.css
+- 09:50:59.047 INFO: GET 200 /css/treeview.css
+- 09:50:59.047 INFO: GET 200 /css/select2.min.css
+- 09:50:59.047 INFO: GET 200 /css/jqwidgets/styles/jqx.base.css
+- 09:50:59.047 INFO: GET 200 /js/jquery-3.2.1.min.js
+- 09:50:59.047 INFO: GET 200 /js/jqwidgets/jqxcore.js
+- 09:50:59.062 INFO: GET 200 /js/jqwidgets/jqxbuttons.js
+- 09:50:59.062 INFO: GET 200 /js/jqwidgets/jqxscrollbar.js
+- 09:50:59.062 INFO: GET 200 /js/jqwidgets/jqxpanel.js
+- 09:50:59.078 INFO: GET 200 /js/jqwidgets/jqxtree.js
+- 09:50:59.093 INFO: GET 200 /js/jqwidgets/jqxexpander.js
+- 09:50:59.093 INFO: GET 200 /js/moment.min.js
+- 09:50:59.093 INFO: GET 200 /js/jquery.daterangepicker.min.js
+- 09:50:59.093 INFO: GET 200 /js/bootstrap.min.js
+- 09:50:59.125 INFO: GET 200 /js/operation.js
+- 09:50:59.125 INFO: GET 200 /js/jquery.PrintArea.js
+- 09:50:59.140 INFO: GET 200 /js/sweetalert2.all.min.js
+- 09:50:59.140 INFO: GET 200 /js/globalebackend.js
+- 09:50:59.140 INFO: GET 200 /js/select2.min.js
+- 09:51:00.859 INFO: GET 200 /webfonts/fa-solid-900.woff2
+- 09:51:00.250 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000//document
+- 09:51:01.531 INFO: POST 200 /document/serial
+- 09:51:01.625 INFO: GET 500 /organization/tree
+- 09:51:04.047 DEBUG: WM_DESTROY
+- 09:51:04.047 DEBUG: RemoveBrowserWindow(): hwnd = 1904022
+- 09:51:04.047 INFO: Stopping Mongoose web server
+- 09:51:04.047 DEBUG: Mongoose webserver stopped immediately
+- 09:51:04.047 DEBUG: OnBeforeClose() hwnd=11012204
+- 09:51:04.047 DEBUG: RemoveBrowserWindow(): hwnd = 11012204
+- 09:51:04.047 DEBUG: GetBrowserWindow(): not found, hwnd = 11012204
+- 09:51:04.047 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 09:51:04.047 DEBUG: Calling CefQuitMessageLoop()
+- 09:51:04.094 DEBUG: OnBrowserDestroyed()
+- 09:51:05.593 INFO: Ended application
+- 09:51:05.593 INFO: --------------------------------------------------------
+- 09:59:54.000 INFO: --------------------------------------------------------
+- 09:59:54.000 INFO: Started application
+- 09:59:54.000 INFO: Logging to: C:\Users\Developer\Desktop\archive\debug.log
+- 09:59:54.000 INFO: Log level = DEBUG4
+- 09:59:54.000 INFO: Starting Mongoose 3.9c web server
+- 09:59:54.000 INFO: WWW directory: C:\Users\Developer\Desktop\archive\www\public
+- 09:59:54.000 INFO: Index files: index.html,index.php
+- 09:59:54.000 INFO: CGI interpreter: C:\Users\Developer\Desktop\archive\php\php-cgi.exe
+- 09:59:54.000 INFO: CGI pattern: **.php$
+- 09:59:54.000 INFO: Hide files patterns: 
+- 09:59:54.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\DEVELO~1\AppData\Local\Temp\
+- 09:59:54.000 INFO: CGI environment variables set: TMP=C:\WINDOWS\Temp,TEMP=C:\WINDOWS\Temp,TMPDIR=C:\WINDOWS\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 09:59:54.016 INFO: Web server url: http://127.0.0.1:8000/
+- 09:59:54.016 INFO: remote_debugging_port = 60059
+- 09:59:54.016 DEBUG: Command line string for the browser process: "C:\Users\Developer\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --remote-debugging-port=60059
+- 09:59:54.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Developer\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x0412 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=20.19.15.4835 --gpu-driver-date=10-16-2017 --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --service-request-channel-token=D9583C6D1DC58EBD97CDB7177375FA98 --mojo-platform-channel-handle=1800 /prefetch:2
+- 09:59:54.250 DEBUG: App::OnContextInitialized()
+- 09:59:54.250 DEBUG: Window max width/height = 1840/992
+- 09:59:54.250 DEBUG: GetBrowserWindow(): not found, hwnd = 655464
+- 09:59:54.250 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 09:59:54.250 DEBUG: BrowserWindow::CreateBrowserControl()
+- 09:59:54.250 DEBUG: StoreBrowserWindow(): hwnd = 655464
+- 09:59:55.547 DEBUG: ClientHandler::OnAfterCreated()
+- 09:59:55.547 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 09:59:55.000 DEBUG: Command line string for the renderer process: "C:\Users\Developer\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=DA8800C2E1D4D2E0484F6534D316B4AC --lang=en-US --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=DA8800C2E1D4D2E0484F6534D316B4AC --renderer-client-id=3 --mojo-platform-channel-handle=2380 /prefetch:1
+- 09:59:55.641 DEBUG: OnLoadingStateChange: loading=1, url=
+- 09:59:55.078 DEBUG: OnBrowserCreated()
+[1107/095955.634:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 09:59:56.844 INFO: GET 200 /
+- 09:59:56.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 10:00:01.172 DEBUG: WM_DESTROY
+- 10:00:01.172 DEBUG: RemoveBrowserWindow(): hwnd = 655464
+- 10:00:01.172 INFO: Stopping Mongoose web server
+- 10:00:01.172 DEBUG: Mongoose webserver stopped immediately
+- 10:00:01.172 DEBUG: OnBeforeClose() hwnd=67104
+- 10:00:01.172 DEBUG: RemoveBrowserWindow(): hwnd = 67104
+- 10:00:01.172 DEBUG: GetBrowserWindow(): not found, hwnd = 67104
+- 10:00:01.172 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 10:00:01.172 DEBUG: Calling CefQuitMessageLoop()
+- 10:00:01.610 DEBUG: OnBrowserDestroyed()
+- 10:00:01.281 INFO: Ended application
+- 10:00:01.281 INFO: --------------------------------------------------------
+- 10:00:43.000 INFO: --------------------------------------------------------
+- 10:00:43.000 INFO: Started application
+- 10:00:43.000 INFO: Logging to: C:\Users\Developer\Desktop\archive\debug.log
+- 10:00:43.000 INFO: Log level = DEBUG4
+- 10:00:43.000 INFO: Starting Mongoose 3.9c web server
+- 10:00:43.000 INFO: WWW directory: C:\Users\Developer\Desktop\archive\www\public
+- 10:00:43.000 INFO: Index files: index.html,index.php
+- 10:00:43.000 INFO: CGI interpreter: C:\Users\Developer\Desktop\archive\php\php-cgi.exe
+- 10:00:43.000 INFO: CGI pattern: **.php$
+- 10:00:43.000 INFO: Hide files patterns: 
+- 10:00:43.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\DEVELO~1\AppData\Local\Temp\
+- 10:00:43.000 INFO: CGI environment variables set: TMP=C:\WINDOWS\Temp,TEMP=C:\WINDOWS\Temp,TMPDIR=C:\WINDOWS\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 10:00:43.000 INFO: Web server url: http://127.0.0.1:8000/
+- 10:00:43.000 INFO: remote_debugging_port = 57236
+- 10:00:43.000 DEBUG: Command line string for the browser process: "C:\Users\Developer\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --remote-debugging-port=57236
+- 10:00:43.047 DEBUG: App::OnContextInitialized()
+- 10:00:43.047 DEBUG: Window max width/height = 1840/992
+- 10:00:43.047 DEBUG: GetBrowserWindow(): not found, hwnd = 590270
+- 10:00:43.047 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 10:00:43.047 DEBUG: BrowserWindow::CreateBrowserControl()
+- 10:00:43.047 DEBUG: StoreBrowserWindow(): hwnd = 590270
+- 10:00:43.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Developer\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x0412 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=20.19.15.4835 --gpu-driver-date=10-16-2017 --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --service-request-channel-token=9A5A989BFA836700F3B624058317443A --mojo-platform-channel-handle=1756 /prefetch:2
+- 10:00:43.094 DEBUG: ClientHandler::OnAfterCreated()
+- 10:00:43.094 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 10:00:43.110 DEBUG: OnLoadingStateChange: loading=1, url=
+[1107/100043.738:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 10:00:43.000 DEBUG: Command line string for the renderer process: "C:\Users\Developer\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=451C705B43020CF7899FE60869D821A7 --lang=en-US --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=451C705B43020CF7899FE60869D821A7 --renderer-client-id=3 --mojo-platform-channel-handle=2364 /prefetch:1
+- 10:00:43.031 DEBUG: OnBrowserCreated()
+- 10:00:45.438 INFO: GET 302 /
+- 10:00:45.657 INFO: GET 200 /document
+- 10:00:45.516 DEBUG: OnContextCreated()
+- 10:00:45.985 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/document
+- 10:00:45.344 INFO: POST 200 /document/serial
+- 10:00:45.375 INFO: GET 500 /organization/tree
+- 10:00:49.719 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/document
+- 10:00:49.954 INFO: GET 302 /logout
+- 10:00:49.016 DEBUG: OnContextCreated()
+- 10:00:49.157 INFO: GET 200 /
+- 10:00:49.188 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 10:01:02.235 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/
+- 10:01:03.532 INFO: POST 302 /login
+- 10:01:03.609 DEBUG: OnContextCreated()
+- 10:01:03.750 INFO: GET 200 /document
+- 10:01:03.813 INFO: GET 304 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 10:01:03.813 INFO: GET 304 /webfonts/fa-solid-900.woff2
+- 10:01:03.829 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000//document
+- 10:01:03.094 INFO: POST 200 /document/serial
+- 10:01:03.110 INFO: GET 500 /organization/tree
+- 10:01:13.157 INFO: POST 404 /lang
+- 10:01:14.235 INFO: POST 404 /lang
+- 10:02:11.157 DEBUG: F5 pressed, reloading page
+- 10:02:11.157 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000//document
+- 10:02:12.281 DEBUG: OnContextCreated()
+- 10:02:12.438 INFO: GET 200 /document
+- 10:02:12.438 INFO: GET 200 /css/fontawesome-all.min.css
+- 10:02:12.438 INFO: GET 200 /css/bootstrap.css
+- 10:02:12.438 INFO: GET 200 /css/daterangepicker.min.css
+- 10:02:12.438 INFO: GET 200 /css/styles.css
+- 10:02:12.438 INFO: GET 200 /css/treeview.css
+- 10:02:12.438 INFO: GET 200 /css/select2.min.css
+- 10:02:12.438 INFO: GET 200 /css/jqwidgets/styles/jqx.base.css
+- 10:02:12.438 INFO: GET 200 /js/jquery-3.2.1.min.js
+- 10:02:12.438 INFO: GET 200 /js/jqwidgets/jqxbuttons.js
+- 10:02:12.438 INFO: GET 200 /js/jqwidgets/jqxscrollbar.js
+- 10:02:12.438 INFO: GET 200 /js/jqwidgets/jqxpanel.js
+- 10:02:12.438 INFO: GET 200 /js/jqwidgets/jqxcore.js
+- 10:02:12.454 INFO: GET 200 /js/jqwidgets/jqxexpander.js
+- 10:02:12.454 INFO: GET 200 /js/jqwidgets/jqxtree.js
+- 10:02:12.454 INFO: GET 200 /js/moment.min.js
+- 10:02:12.454 INFO: GET 200 /js/jquery.daterangepicker.min.js
+- 10:02:12.454 INFO: GET 200 /js/bootstrap.min.js
+- 10:02:12.454 INFO: GET 200 /js/operation.js
+- 10:02:12.454 INFO: GET 200 /js/jquery.PrintArea.js
+- 10:02:12.454 INFO: GET 200 /js/sweetalert2.all.min.js
+- 10:02:12.454 INFO: GET 200 /js/select2.min.js
+- 10:02:12.454 INFO: GET 200 /js/globalebackend.js
+- 10:02:12.547 INFO: GET 200 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 10:02:12.547 INFO: GET 200 /webfonts/fa-solid-900.woff2
+- 10:02:12.579 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000//document
+- 10:02:12.813 INFO: POST 200 /document/serial
+- 10:02:12.844 INFO: GET 500 /organization/tree
+- 10:02:44.985 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000//document
+- 10:02:44.204 INFO: GET 302 /logout
+- 10:02:45.250 DEBUG: OnContextCreated()
+- 10:02:45.407 INFO: GET 200 /
+- 10:02:45.407 INFO: GET 304 /css/bootstrap.css
+- 10:02:45.407 INFO: GET 304 /css/fontawesome-all.min.css
+- 10:02:45.407 INFO: GET 304 /css/styles.css
+- 10:02:45.422 INFO: GET 304 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 10:02:45.438 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 10:02:50.641 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/
+- 10:02:50.922 INFO: POST 302 /login
+- 10:02:50.000 DEBUG: OnContextCreated()
+- 10:02:50.141 INFO: GET 200 /document
+- 10:02:50.141 INFO: GET 304 /css/bootstrap.css
+- 10:02:50.141 INFO: GET 304 /css/fontawesome-all.min.css
+- 10:02:50.141 INFO: GET 304 /css/daterangepicker.min.css
+- 10:02:50.141 INFO: GET 304 /css/styles.css
+- 10:02:50.141 INFO: GET 304 /css/treeview.css
+- 10:02:50.141 INFO: GET 304 /css/select2.min.css
+- 10:02:50.141 INFO: GET 304 /css/jqwidgets/styles/jqx.base.css
+- 10:02:50.141 INFO: GET 304 /js/jquery-3.2.1.min.js
+- 10:02:50.141 INFO: GET 304 /js/jqwidgets/jqxcore.js
+- 10:02:50.141 INFO: GET 304 /js/jqwidgets/jqxbuttons.js
+- 10:02:50.141 INFO: GET 304 /js/jqwidgets/jqxscrollbar.js
+- 10:02:50.141 INFO: GET 304 /js/jqwidgets/jqxpanel.js
+- 10:02:50.141 INFO: GET 304 /js/jqwidgets/jqxtree.js
+- 10:02:50.157 INFO: GET 304 /js/jqwidgets/jqxexpander.js
+- 10:02:50.157 INFO: GET 304 /js/moment.min.js
+- 10:02:50.157 INFO: GET 304 /js/jquery.daterangepicker.min.js
+- 10:02:50.157 INFO: GET 304 /js/bootstrap.min.js
+- 10:02:50.157 INFO: GET 304 /js/operation.js
+- 10:02:50.157 INFO: GET 304 /js/jquery.PrintArea.js
+- 10:02:50.157 INFO: GET 304 /js/sweetalert2.all.min.js
+- 10:02:50.157 INFO: GET 304 /js/select2.min.js
+- 10:02:50.157 INFO: GET 304 /js/globalebackend.js
+- 10:02:50.250 INFO: GET 304 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 10:02:50.250 INFO: GET 304 /webfonts/fa-solid-900.woff2
+- 10:02:50.282 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000//document
+- 10:02:51.516 INFO: POST 200 /document/serial
+- 10:02:51.547 INFO: GET 500 /organization/tree
+- 10:02:52.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000//document
+- 10:02:52.704 INFO: GET 302 /logout
+- 10:02:52.781 DEBUG: OnContextCreated()
+- 10:02:52.922 INFO: GET 200 /
+- 10:02:52.922 INFO: GET 304 /css/bootstrap.css
+- 10:02:52.922 INFO: GET 304 /css/fontawesome-all.min.css
+- 10:02:52.922 INFO: GET 304 /css/styles.css
+- 10:02:52.922 INFO: GET 304 /img/archive.png
+- 10:02:52.938 INFO: GET 304 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 10:02:52.954 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 10:02:54.047 DEBUG: WM_DESTROY
+- 10:02:54.047 DEBUG: RemoveBrowserWindow(): hwnd = 590270
+- 10:02:54.047 INFO: Stopping Mongoose web server
+- 10:02:54.047 DEBUG: Mongoose webserver stopped immediately
+- 10:02:54.047 DEBUG: OnBeforeClose() hwnd=1050128
+- 10:02:54.047 DEBUG: RemoveBrowserWindow(): hwnd = 1050128
+- 10:02:54.047 DEBUG: GetBrowserWindow(): not found, hwnd = 1050128
+- 10:02:54.047 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 10:02:54.047 DEBUG: Calling CefQuitMessageLoop()
+- 10:02:54.922 DEBUG: OnBrowserDestroyed()
+- 10:02:54.157 INFO: Ended application
+- 10:02:54.157 INFO: --------------------------------------------------------
+- 10:03:00.000 INFO: --------------------------------------------------------
+- 10:03:00.000 INFO: Started application
+- 10:03:00.000 INFO: Logging to: C:\Users\Developer\Desktop\archive\debug.log
+- 10:03:00.000 INFO: Log level = DEBUG4
+- 10:03:00.000 INFO: Starting Mongoose 3.9c web server
+- 10:03:00.000 INFO: WWW directory: C:\Users\Developer\Desktop\archive\www\public
+- 10:03:00.000 INFO: Index files: index.html,index.php
+- 10:03:00.000 INFO: CGI interpreter: C:\Users\Developer\Desktop\archive\php\php-cgi.exe
+- 10:03:00.000 INFO: CGI pattern: **.php$
+- 10:03:00.000 INFO: Hide files patterns: 
+- 10:03:00.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\DEVELO~1\AppData\Local\Temp\
+- 10:03:00.000 INFO: CGI environment variables set: TMP=C:\WINDOWS\Temp,TEMP=C:\WINDOWS\Temp,TMPDIR=C:\WINDOWS\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 10:03:00.000 INFO: Web server url: http://127.0.0.1:8000/
+- 10:03:00.000 INFO: remote_debugging_port = 65534
+- 10:03:00.000 DEBUG: Command line string for the browser process: "C:\Users\Developer\Desktop\archive\archive.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --remote-debugging-port=65534
+- 10:03:00.032 DEBUG: App::OnContextInitialized()
+- 10:03:00.032 DEBUG: Window max width/height = 1840/992
+- 10:03:00.032 DEBUG: GetBrowserWindow(): not found, hwnd = 198156
+- 10:03:00.032 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 10:03:00.047 DEBUG: BrowserWindow::CreateBrowserControl()
+- 10:03:00.047 DEBUG: StoreBrowserWindow(): hwnd = 198156
+- 10:03:00.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Developer\Desktop\archive\archive.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x0412 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=20.19.15.4835 --gpu-driver-date=10-16-2017 --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --service-request-channel-token=2D84DE5B4C5A72FE4407B6B5F59AE235 --mojo-platform-channel-handle=1756 /prefetch:2
+- 10:03:00.094 DEBUG: ClientHandler::OnAfterCreated()
+- 10:03:00.094 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 10:03:00.094 DEBUG: OnLoadingStateChange: loading=1, url=
+- 10:03:00.015 DEBUG: Command line string for the renderer process: "C:\Users\Developer\Desktop\archive\archive.exe" --type=renderer --no-sandbox --primordial-pipe-token=C993DEB62E503EFD7649CBEAE961CDAA --lang=en-US --lang=en-US --log-file="C:\Users\Developer\Desktop\archive\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=C993DEB62E503EFD7649CBEAE961CDAA --renderer-client-id=3 --mojo-platform-channel-handle=2364 /prefetch:1
+[1107/100300.363:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 10:03:00.031 DEBUG: OnBrowserCreated()
+- 10:03:01.454 INFO: GET 304 /css/bootstrap.css
+- 10:03:01.454 INFO: GET 304 /css/fontawesome-all.min.css
+- 10:03:01.454 INFO: GET 304 /css/styles.css
+- 10:03:01.454 INFO: GET 200 /
+- 10:03:01.344 DEBUG: OnContextCreated()
+- 10:03:01.454 INFO: GET 304 /img/archive.png
+- 10:03:01.469 INFO: GET 304 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 10:03:01.516 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 10:03:06.610 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/
+- 10:03:07.891 INFO: POST 302 /login
+- 10:03:07.984 DEBUG: OnContextCreated()
+- 10:03:07.094 INFO: GET 304 /css/bootstrap.css
+- 10:03:07.094 INFO: GET 200 /document
+- 10:03:07.094 INFO: GET 304 /css/fontawesome-all.min.css
+- 10:03:07.110 INFO: GET 304 /css/daterangepicker.min.css
+- 10:03:07.110 INFO: GET 304 /css/styles.css
+- 10:03:07.110 INFO: GET 304 /css/treeview.css
+- 10:03:07.110 INFO: GET 304 /css/select2.min.css
+- 10:03:07.110 INFO: GET 304 /css/jqwidgets/styles/jqx.base.css
+- 10:03:07.110 INFO: GET 304 /js/jquery-3.2.1.min.js
+- 10:03:07.110 INFO: GET 304 /js/jqwidgets/jqxcore.js
+- 10:03:07.110 INFO: GET 304 /js/jqwidgets/jqxbuttons.js
+- 10:03:07.110 INFO: GET 304 /js/jqwidgets/jqxscrollbar.js
+- 10:03:07.110 INFO: GET 304 /js/jqwidgets/jqxpanel.js
+- 10:03:07.110 INFO: GET 304 /js/jqwidgets/jqxtree.js
+- 10:03:07.110 INFO: GET 304 /js/jqwidgets/jqxexpander.js
+- 10:03:07.110 INFO: GET 304 /js/moment.min.js
+- 10:03:07.110 INFO: GET 304 /js/jquery.daterangepicker.min.js
+- 10:03:07.110 INFO: GET 304 /js/bootstrap.min.js
+- 10:03:07.110 INFO: GET 304 /js/operation.js
+- 10:03:07.110 INFO: GET 304 /js/jquery.PrintArea.js
+- 10:03:07.110 INFO: GET 304 /js/sweetalert2.all.min.js
+- 10:03:07.125 INFO: GET 304 /js/select2.min.js
+- 10:03:07.125 INFO: GET 304 /js/globalebackend.js
+- 10:03:07.219 INFO: GET 304 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 10:03:07.219 INFO: GET 304 /webfonts/fa-solid-900.woff2
+- 10:03:07.297 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000//document
+- 10:03:07.547 INFO: POST 200 /document/serial
+- 10:03:07.563 INFO: GET 500 /organization/tree
+- 10:03:11.500 INFO: POST 200 /search/document
+- 10:03:15.938 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000//document
+- 10:03:15.157 INFO: GET 302 /logout
+- 10:03:15.234 DEBUG: OnContextCreated()
+- 10:03:15.344 INFO: GET 304 /css/bootstrap.css
+- 10:03:15.344 INFO: GET 304 /css/fontawesome-all.min.css
+- 10:03:15.344 INFO: GET 304 /css/styles.css
+- 10:03:15.344 INFO: GET 200 /
+- 10:03:15.344 INFO: GET 304 /img/archive.png
+- 10:03:15.360 INFO: GET 304 /webfonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+- 10:03:15.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/
+- 10:03:17.454 DEBUG: WM_DESTROY
+- 10:03:17.454 DEBUG: RemoveBrowserWindow(): hwnd = 198156
+- 10:03:17.454 INFO: Stopping Mongoose web server
+- 10:03:17.454 DEBUG: Mongoose webserver stopped immediately
+- 10:03:17.454 DEBUG: OnBeforeClose() hwnd=722344
+- 10:03:17.454 DEBUG: RemoveBrowserWindow(): hwnd = 722344
+- 10:03:17.454 DEBUG: GetBrowserWindow(): not found, hwnd = 722344
+- 10:03:17.454 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 10:03:17.454 DEBUG: Calling CefQuitMessageLoop()
+- 10:03:17.359 DEBUG: OnBrowserDestroyed()
+- 10:03:17.547 INFO: Ended application
+- 10:03:17.547 INFO: --------------------------------------------------------
